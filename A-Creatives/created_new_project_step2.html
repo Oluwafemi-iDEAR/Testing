@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>Dashboard Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    
+
+    <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+  </head>
+  <body class="hero">
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <div class="logo navbar-brand col-md-3 col-lg-2 me-0 px-3">
+    <a hef="home.html">
+      <div class="register-left mx-4">
+        <img src="images/Mnet_Brand_largesquare.png" height="35" style="width: 50px;" alt="logo" class="hidden-xs hidden-sm" border="0">
+      </div>  
+    </a>
+  </div>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <img src="images/acreatives-preview.png" height="35" style="width: 50px;" alt="logo" class="hidden-xs hidden-sm" border="0">
+  </button>
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">Sign out</a>
+    </li>
+  </ul>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse mt-4">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column navi">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <span data-feather="home"></span>
+              Dashboard
+            </a>
+          </li>
+
+          <ul class="nav flex-column">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false"><span data-feather="user"></span>Users</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+              <li><a class="dropdown-item" href="#">New User</a></li>
+              <li><a class="dropdown-item" href="#">View Users</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false"><span data-feather="layers"></span>Projects</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+              <li><a class="dropdown-item" href="#">New Project</a></li>
+              <li><a class="dropdown-item" href="#">Project Lists</a></li>
+            </ul>
+          </li>
+        </ul>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="clock"></span>
+              Periods
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="copy"></span>
+              Copy
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="log-out" data-inline="true"></span>
+              Log Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <p class="cloud-text hero"><strong>Management Module</strong> </p>
+      </div>
+      
+    <div class="row g-3">
+     <div class="col-md-5 mb-5">
+      <div class="card text-dark justify-content-center shadow mb-3 ">
+        <div class="card-header"><i class="fa fa-list-alt" aria-hidden="true"></i> New Project</div>
+        <div class="w3-container mt-3">
+          <form role="form" action="" method="POST">
+            <input type="hidden" name="_token" value="3fmHlVgxkMIy2KJwMRrIfhvqHXZiXHmECx0WKXK5">
+            <div class="control-group mb-3">
+                <label for="prod_h_name">Name</label>
+                <input type="text" class="form-control" value="" name="prod_h_name" required
+                       id="prod_h_name"
+                       placeholder="Enter Production House name">
+            </div>
+            <div class="control-group mb-3">
+                <label for="address_house">Address/House</label>
+                <input type="text" class="form-control" name="address_house"  required
+                       id="address_house"
+                       placeholder="Enter Address/House">
+            </div>
+            <div class="control-group mb-3">
+                <label for="main_location">Main Location</label>
+                <input type="text" class="form-control" name="main_location" value=""
+                       required id="main_location"
+                       placeholder="Enter Main Location">
+            </div>
+            <div class="control-group mb-3">
+                <label for="tex_id">Tax ID Number</label>
+                <input type="text" class="form-control" name="tax_id" value="" required
+                       id="tax_id"
+                       placeholder="Enter Tax ID Number">
+            </div>
+            <div class="control-group mb-3">
+                <label for="bank_name_id">Bank Name</label>
+                <select class="form-control" name="bank_name_id"><option value="1">Access Bank Plc</option><option value="2">Citibank Nigeria Limited</option><option value="3">Diamond Bank Plc</option><option value="4">First City Monument Bank Plc</option><option value="5">Ecobank Nigeria Plc</option><option value="6">Enterprise Bank</option><option value="7">Fidelity Bank Plc</option><option value="8">Key Stone Bank</option><option value="9">Polaris Bank Plc</option><option value="10">Stanbic IBTC Bank Ltd</option><option value="11">Standard Chartered Bank Nigeria Ltd</option><option value="12">Sterling Bank Plc</option><option value="13">SunTrust Bank Nigeria Limited</option><option value="14">Union Bank of Nigeria Plc</option><option value="15">Unity  Bank Plc</option><option value="16">Wema Bank Plc</option><option value="17">Zenith Bank Plc</option><option value="18">Heritage Banking Company Ltd</option><option value="19">First Bank Nigeria</option><option value="20">United Bank For Africa Plc</option><option value="21">Stanbic IBTC Bank Ltd</option><option value="22">MainStreet Bank</option><option value="23">Guaranty Trust Bank</option></select>
+
+            </div>
+            <div class="control-group mb-3">
+                <label for="bank_acc_name">Bank Account Name</label>
+                <input type="text" class="form-control" value="" name="bank_acc_name"
+                       required
+                       placeholder="Enter Bank Account Name">
+            </div>
+            <div class="control-group mb-3">
+                <label for="bank_acc_num">Bank Account Number</label>
+                <input type="text" class="form-control" value="" name="bank_acc_num"
+                       required
+                       placeholder="Enter Bank Account Number">
+            </div>
+            <div class="control-group mb-3">
+                <label for="project_name">Bank Account Type</label>
+                <select name="bank_acc_type" class="form-control">
+                    <option value="savings">Savings</option>
+                    <option value="current">Current</option>
+                </select>
+            </div>
+
+          </form>
+      </div>
+    </div>
+    </div>
+      <div class="col-md-5 mb-5">
+      <div class="card text-dark justify-content-center shadow">
+        <div class="card-header"><i class="fa fa-bank" aria-hidden="true"></i> Production House Details</div>
+        <div class="form-group row w3-container mt-3">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-sm-10 mt-3 mb-3 w3-container">
+            <button type="back" class="btn btn-sm btn-dark">Go Back</button>
+          </div>
+      </div>
+      </div>
+    </div>
+    </main>
+  </div>
+</div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+      <script src="js/dashboard.js"></script>
+  </body>
+</html>

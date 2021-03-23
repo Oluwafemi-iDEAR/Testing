@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Home</title>
+    <link rel="stylesheet" type="text/css" href="css/mod.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <div class="logo">
+                    <a href="#"><div class="register-left">
+                        <img src="images/Mnet_Brand_largesquare.png" height="35" style="width: 40px;" alt="logo" class="hidden-xs hidden-sm" border="0">
+                        </div>  
+                        </a>
+                </div>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="https://oluwafemi-idear.github.io/yddweb/wp-content/uploads/sites/13/2015/01/Teenage-1400-x-450.jpg" class="visible-xs visible-sm circle-logo" alt="user">
+                        <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="navbar-content">
+                                <span>JS Krishna</span>
+                                <p class="text-muted small">
+                                    me@jskrishna.com
+                                </p>
+                                <div class="divider">
+                                </div>
+                                <a href="#" class="view btn-sm active">View Profile</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!-- <li class="nav-item active">
+                    <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#top">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#top">Pricing</a>
+                </li>
+                
+                <!-- This menu is hidden in bigger devices with d-sm-none. 
+               The sidebar isn't proper for smaller screens imo, so this dropdown menu can keep all the useful sidebar itens exclusively for smaller screens  -->
+                <li class="nav-item dropdown d-sm-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu </a>
+                    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                        <a class="dropdown-item" href="#top">hjsahgjsa</a>
+                        <a class="dropdown-item" href="#top">Profile</a>
+                        <a class="dropdown-item" href="#top">Tasks</a>
+                        <a class="dropdown-item" href="#top">Etc ...</a>
+                    </div>
+                </li><!-- Smaller devices menu END -->
+            </ul>
+        </div>
+    </nav><!-- NavBar END -->
+    <!-- Bootstrap row -->
+    <div class="row" id="body-row">
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+            <!-- d-* hiddens the Sidebar in smaller devices. Its items can be kept on the Navbar 'Menu' -->
+            <!-- Bootstrap List Group -->
+            <ul class="list-group">
+                <!-- Separator with title -->
+                <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                    <small>MAIN MENU</small>
+                </li>
+                <!-- /END Separator -->
+                <!-- Menu with submenu -->
+                
+                <a href="#" class="bg-dark list-group-item list-group-item-action active">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-dashboard fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Dashboard</span>
+                    </div>
+                </a>
+
+                <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-book fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Journals</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu1' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">New Journal</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">View Journals</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Inflow Planner</span>
+                    </a>
+                </div>
+                
+                <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-file fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Project Expenses</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <div id='submenu2' class="collapse sidebar-submenu">
+                    <!-- <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Project Expenses</span>
+                    </a> -->
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Acquisitions</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Day Players</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Operational Expenses</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Salaries</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Rentals</span>
+                    </a>
+                </div>
+
+                
+                <a href="#submenu3" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-user fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Vendors</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu3' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">New Vendor</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">View Vendors</span>
+                    </a>
+                 </div>
+                <!--<a href="#submenu3" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-user fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Profile</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a> -->
+                <!-- Submenu content
+                <div id='submenu3' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Settings</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Password</span>
+                    </a>
+                </div> -->
+                
+                
+                <a href="#submenu4" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="far fa-newspaper fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Reports</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <div id='submenu4' class="collapse sidebar-submenu">
+                    <!-- <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Project Expenses</span>
+                    </a> -->
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Asset Listings</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Budget Sub Report</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">GL Spools</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Project Expenses</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Reconcilation Ledger</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Trial Balance</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Vendor Reports</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">WHT Reports</span>
+                    </a>
+                </div>
+
+
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-tasks fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Tasks</span>
+                    </div>
+                </a>
+                <!-- Separator with title -->
+                <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                    <small>OPTIONS</small>
+                </li>
+                <!-- /END Separator -->
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-calendar fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Calendar</span>
+                    </div>
+                </a>
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-envelope-o fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Messages <span class="badge badge-pill badge-primary ml-2">5</span></span>
+                    </div>
+                </a>
+                <!-- Separator without title -->
+                <li class="list-group-item sidebar-separator menu-collapsed"></li>
+                <!-- /END Separator -->
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-question fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Help</span>
+                    </div>
+                </a>
+                <a href="#top" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                        <span id="collapse-text" class="menu-collapsed">Collapse</span>
+                    </div>
+                </a>
+            </ul><!-- List Group END-->
+        </div><!-- sidebar-container END -->
+        <!-- MAIN -->
+        
+        <div class="user-dashboard">
+            <h1>Hello, JS</h1>
+            <div class="row">
+                <div class="col-md-5 col-sm-5 col-xs-12 gutter">
+
+                    <div class="sales">
+                        <h2>Your Sale</h2>
+
+                        <div class="btn-group">
+                            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Period:</span> Last Year
+                            </button>
+                            <div class="dropdown-menu">
+                                <a href="#">2012</a>
+                                <a href="#">2014</a>
+                                <a href="#">2015</a>
+                                <a href="#">2016</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12 gutter">
+
+                    <div class="sales report">
+                        <h2>Report</h2>
+                        <div class="btn-group">
+                            <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Period:</span> Last Year
+                            </button>
+                            <div class="dropdown-menu">
+                                <a href="#">2012</a>
+                                <a href="#">2014</a>
+                                <a href="#">2015</a>
+                                <a href="#">2016</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col p-4">
+            <h1 class="display-4">Collapsing Sidebar Menu</h1>
+            <div class="card">
+                <h5 class="card-header font-weight-light">Requirements</h5>
+                <div class="card-body">
+                    <ul>
+                        <li>JQuery</li>
+                        <li>Bootstrap 4.3</li>
+                        <li>FontAwesome</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Col END -->
+
+        
+    </div><!-- body-row END -->
+
+
+    
+	<script src="js/script.js"></script>
+</body>
+</html>

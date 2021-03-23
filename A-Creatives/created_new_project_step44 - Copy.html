@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>Dashboard Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  
+
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+
+    <script>
+      	var i=0;
+	$(document).ready(function(){
+     $('#add_more').on('click', function(){
+      var colorR = Math.floor((Math.random() * 256));
+      var colorG = Math.floor((Math.random() * 256));
+      var colorB = Math.floor((Math.random() * 256));
+      i++;
+      var html ='<div id="append_no_'+i+'" class="animated bounceInLeft">'+
+          '<div class="input-group input-group-sm mt-3">'+
+		  '<div class="input-group-prepend">'+
+		  '</div>'+
+		  '<input type="text" placeholder="Student Name"  class="form-control"/>'+
+		  '</div>'+
+		  '<div class="input-group input-group-sm mt-3">'+
+		  '<div class="input-group-prepend">'+
+		  '</div>'+
+		  '<input type="text" placeholder="Student Phone" class="form-control"/>'+
+		  '</div>'+
+		  '<div class="input-group input-group-sm mt-3">'+
+		  '<div class="input-group-prepend">'+
+		  '</div>'+
+		  '<input type="email" placeholder="Student Email" class="form-control"/>'+
+		  '</div></div>';
+
+	  $('#dynamic_container').append(html);
+	  $('#remove_more').fadeIn(function(){
+	  	 $(this).show();
+	  });
+     });
+
+     $('#remove_more').on('click', function(){
+         
+         $('#append_no_'+i).removeClass('bounceInLeft').addClass('bounceOutRight')
+            .fadeOut(function(){
+            	$(this).remove();
+            });
+            i--;
+            if(i==0){
+            	$('#remove_more').fadeOut(function(){
+            		$(this).hide()
+            	});;
+            }
+   
+     });
+	});
+    </script>
+  </head>
+  <body class="hero">
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <div class="logo navbar-brand col-md-3 col-lg-2 me-0 px-3">
+    <a hef="home.html">
+      <div class="register-left">
+        <img src="images/Mnet_Brand_largesquare.png" height="35" style="width: 50px;" alt="logo" class="hidden-xs hidden-sm" border="0">
+      </div>  
+    </a>
+  </div>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <img src="images/acreatives-preview.png" height="35" style="width: 50px;" alt="logo" class="hidden-xs hidden-sm" border="0">
+  </button>
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">Sign out</a>
+    </li>
+  </ul>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse mt-4">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column navi">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <span data-feather="home"></span>
+              Dashboard
+            </a>
+          </li>
+
+          <ul class="nav flex-column">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false"><span data-feather="user"></span>Users</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+              <li><a class="dropdown-item" href="mang-new-user.html">New User</a></li>
+              <li><a class="dropdown-item" href="#">View Users</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false"><span data-feather="layers"></span>Projects</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+              <li><a class="dropdown-item" href="#">New Project</a></li>
+              <li><a class="dropdown-item" href="#">Project Lists</a></li>
+            </ul>
+          </li>
+        </ul>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="clock"></span>
+              Periods
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="copy"></span>
+              Copy
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="log-out" data-inline="true"></span>
+              Log Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <!-- <h1 class="h2">Management Module</h1> -->
+        <p class="cloud-text hero"><strong>Management Module</strong> </p>
+      </div>
+      
+      <div class="row g-3">
+        <div class="col p-4">
+          <div class="card animated bounceInDown myForm">
+              <h5 class="card-header font-weight-light"><i class="fa fa-user" aria-hidden="true"></i>  View Users</h5>
+              <div class="card-body">
+          <form>
+            <div id="dynamic_container">
+              <div class="input-group input-group-sm">
+                <div class="input-group-prepend">
+                </div>
+                <input type="text" placeholder="Student Name" class="form-control"/>
+              </div>
+              <div class="input-group input-group-sm mt-3">
+                <div class="input-group-prepend">
+                </div>
+                <input type="text" placeholder="Student Phone" class="form-control"/>
+              </div>
+              <div class="input-group input-group-sm mt-3">
+                <div class="input-group-prepend">
+                </div>
+                <input type="email" placeholder="Student Email" class="form-control"/>
+              </div>
+            </div>
+          </form>
+
+          
+        <div class="card-footer">
+          <a class="btn btn-secondary btn-sm" id="add_more"><i class="fa fa-plus-circle"></i> Add</a>
+          <a class="btn btn-secondary btn-sm" id="remove_more"><i class="fa fa-trash-alt"></i> Remove</a>
+          <button class="btn btn-success btn-sm float-right submit_btn"><i class="fa fa-arrow-alt-circle-right"></i> Submit</button>
+        </div>
+    <!-- </div>
+    </dvi> -->
+                
+    <form role="form" action="#" method="POST">
+      <input type="hidden" name="" value="">
+
+
+          <div class="control-group" v-for="row in rows" track-by="$index" style="float:left; padding: 10px;">
+
+                  <label for=""> </label>
+                  <input   class="form-control" :name="" v-model="row.numbers | currencyDisplay" value="0"
+                         id="">
+
+          </div>
+      <br />
+
+      <div class="control-group" style="float:left; padding: 10px; background-color: #eee;">
+        <label for="total">Total </label>
+        <input number  class="form-control" name="total" value="{{ total_numbers | currencyDisplay }}" required
+                 id="total">
+      </div>
+
+      <div class="span12">
+          <div class="control-group">
+              <button class="btn btn-primary">Save</button>
+          </div>
+      </div>
+  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+    </main>
+  </div>
+</div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

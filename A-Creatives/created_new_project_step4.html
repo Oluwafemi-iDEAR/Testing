@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>Dashboard Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script> -->
+
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+
+  </head>
+  <body class="hero">
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <div class="logo navbar-brand col-md-3 col-lg-2 me-0 px-3">
+    <a hef="home.html">
+      <div class="register-left">
+        <img src="images/Mnet_Brand_largesquare.png" height="35" style="width: 50px;" alt="logo" class="hidden-xs hidden-sm" border="0">
+      </div>  
+    </a>
+  </div>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <img src="images/acreatives-preview.png" height="35" style="width: 50px;" alt="logo" class="hidden-xs hidden-sm" border="0">
+  </button>
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">Sign out</a>
+    </li>
+  </ul>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse mt-4">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column navi">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <span data-feather="home"></span>
+              Dashboard
+            </a>
+          </li>
+
+          <ul class="nav flex-column">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false"><span data-feather="user"></span>Users</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+              <li><a class="dropdown-item" href="mang-new-user.html">New User</a></li>
+              <li><a class="dropdown-item" href="#">View Users</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false"><span data-feather="layers"></span>Projects</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+              <li><a class="dropdown-item" href="#">New Project</a></li>
+              <li><a class="dropdown-item" href="#">Project Lists</a></li>
+            </ul>
+          </li>
+        </ul>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="clock"></span>
+              Periods
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="copy"></span>
+              Copy
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="log-out" data-inline="true"></span>
+              Log Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <!-- <h1 class="h2">Management Module</h1> -->
+        <p class="cloud-text hero"><strong>Management Module</strong> </p>
+      </div>
+      
+      <div class="row g-3">
+        <div class="col p-4">
+          <div class="card animated bounceInDown myForm">
+              <h5 class="card-header font-weight-light"><i class="fa fa-user" aria-hidden="true"></i>  View Users</h5>
+              <div class="card-body">
+                <div class="container">
+                    <div class="row clearfix">
+                      <div class="col-md-12 table-responsive">
+                      <table class="table table-bordered table-hover table-sortable animated fadeInDown" id="tab_logic">
+                        <thead>
+                          <tr >
+                            <th class="text-center">
+                              Name
+                            </th>
+                            <th class="text-center">
+                              Email
+                            </th>
+                            <th class="text-center">
+                              Notes
+                            </th>
+                              <th class="text-center">
+                              Option
+                            </th>
+                                <th class="text-center" style="border-top: 1px solid #ffffff; border-right: 1px solid #ffffff;">
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr id='addr0' data-id="0" class="hidden">
+                            <td data-name="sel">
+                              <select class="form-control year selectFilter" name="sel0" data-target="project">
+                                  <option value="-1"> Select Year </option>
+                                  <option data-ref="18">2018</option>
+                                  <option data-ref="19">2019</option>
+                                  <option data-ref="20">2020</option>
+                                  <option data-ref="21">2021</option>
+                              </select>
+                            </td>
+                            <td data-name="name">
+                              <select class="form-control project selectFilter">
+                                <option value="-1"> Select Project </option>
+                                <option data-belong="18">Forbidden</option>	
+                                <option data-belong="18">My Flatmate</option>	
+                                <option data-belong="18">EVE</option>	
+                                <option data-belong="18">Battle Hush</option>
+                                <option data-belong="18">Johnsons Season 7</option>
+                                <option data-belong="18">HUSTLE</option>
+                                <option data-belong="19">My Flatmate S3</option>	
+                                <option data-belong="19">Brotherhood</option>		
+                                <option data-belong="19">Unbroken</option>		
+                                <option data-belong="19">Johnsons Season 8</option>	
+                                <option data-belong="19">EVE Season 2	</option>
+                                <option data-belong="19">Halita S2</option>
+                                <option data-belong="19">Unmarried		</option>
+                                <option data-belong="19">Date My Family Nigeria</option>
+                                <option data-belong="20">My Flatmate S4</option>
+                                <option data-belong="20">UNWANTED</option>
+                                <option data-belong="20">ENAKHE	</option>
+                                <option data-belong="20">Judging Matters S1</option>	
+                                <option data-belong="20">My Siblings and I S3</option>
+                                <option data-belong="20">Johnsons Season 9</option>
+                                <option data-belong="20">Love Come Back</option>
+                                <option data-belong="20">Comedy Night S3	</option>
+                                <option data-belong="20">Date My Family Nigeria S2</option>
+                                <option data-belong="20">Baby Drama</option>
+                                <option data-belong="20">Shoot your Shot	</option>
+                                <option data-belong="20">Judging Matters S2	</option>
+                                <option data-belong="20">EVE S3</option>
+                                <option data-belong="20">Unmarried Season 2</option>
+                                <option data-belong="20">I AM LAYCON</option>	
+                                <option data-belong="21">My Flatmate S6</option>
+                            </select>
+                            </td>
+                            <td data-name="mail">
+                                <input type="number" name="" placeholder="Fix Amount" class="form-control"/>
+                            </td>
+                            <td data-name="desc">
+                                <textarea name="desc0" placeholder="Description" class="form-control"></textarea>
+                            </td>
+                                        <td data-name="del">
+                                            <button name="del0" class='btn btn-danger glyphicon glyphicon-remove row-remove'><span aria-hidden="true">×</span></button>
+                                        </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <a id="add_row" class="btn btn-primary float-right">Add Row</a>
+                  </div>
+
+                              
+    <form role="form" action="#" method="POST">
+      <input type="hidden" name="" value="">
+
+
+          <div class="control-group" v-for="row in rows" track-by="$index" style="float:left; padding: 10px;">
+
+                  <label for=""> </label>
+                  <input   class="form-control" :name="" v-model="row.numbers | currencyDisplay" value="0"
+                         id="">
+
+          </div>
+      <br />
+
+      <div class="control-group" style="float:left; padding: 10px; background-color: #eee;">
+        <label for="total">Total </label>
+        <input number  class="form-control" name="total" value="{{ total_numbers | currencyDisplay }}" required
+                 id="total">
+      </div>
+
+      <div class="span12">
+          <div class="control-group">
+              <button class="btn btn-primary">Save</button>
+          </div>
+      </div>
+  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+    </main>
+  </div>
+</div>
+
+<script>
+    
+  $(document).ready(function() {
+  $("#add_row").on("click", function() {
+      // Dynamic Rows Code
+      
+      // Get max row id and set new id
+      var newid = 0;
+      $.each($("#tab_logic tr"), function() {
+          if (parseInt($(this).data("id")) > newid) {
+              newid = parseInt($(this).data("id"));
+          }
+      });
+      newid++;
+      
+      var tr = $("<tr></tr>", {
+          id: "addr"+newid,
+          "data-id": newid
+      });
+      
+      // loop through each td and create new elements with name of newid
+      $.each($("#tab_logic tbody tr:nth(0) td"), function() {
+          var td;
+          var cur_td = $(this);
+          
+          var children = cur_td.children();
+          
+          // add new td and element if it has a nane
+          if ($(this).data("name") !== undefined) {
+              td = $("<td></td>", {
+                  "data-name": $(cur_td).data("name")
+              });
+              
+              var c = $(cur_td).find($(children[0]).prop('tagName')).clone().val("");
+              c.attr("name", $(cur_td).data("name") + newid);
+              c.appendTo($(td));
+              td.appendTo($(tr));
+          } else {
+              td = $("<td></td>", {
+                  'text': $('#tab_logic tr').length
+              }).appendTo($(tr));
+          }
+      });
+      
+      // add delete button and td
+      /*
+      $("<td></td>").append(
+          $("<button class='btn btn-danger glyphicon glyphicon-remove row-remove'></button>")
+              .click(function() {
+                  $(this).closest("tr").remove();
+              })
+      ).appendTo($(tr));
+      */
+      
+      // add the new row
+      $(tr).appendTo($('#tab_logic'));
+      
+      $(tr).find("td button.row-remove").on("click", function() {
+           $(this).closest("tr").remove();
+      });
+});
+
+
+  // Sortable Code
+  var fixHelperModified = function(e, tr) {
+      var $originals = tr.children();
+      var $helper = tr.clone();
+  
+      $helper.children().each(function(index) {
+          $(this).width($originals.eq(index).width())
+      });
+      
+      return $helper;
+  };
+
+  $(".table-sortable tbody").sortable({
+      helper: fixHelperModified      
+  }).disableSelection();
+
+  $(".table-sortable thead").disableSelection();
+
+
+
+  $("#add_row").trigger("click");
+});
+  
+  </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/selectFilter.min.js"></script>
+  </body>
+</html>

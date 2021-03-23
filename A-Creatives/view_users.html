@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>Dashboard Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    
+
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <script>
+      function myFunction() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+      
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+      </script>
+    
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+  </head>
+  <body class="hero">
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <div class="logo navbar-brand col-md-3 col-lg-2 me-0 px-3">
+    <a hef="home.html">
+      <div class="register-left">
+        <img src="images/Mnet_Brand_largesquare.png" height="35" style="width: 50px;" alt="logo" class="hidden-xs hidden-sm" border="0">
+      </div>  
+    </a>
+  </div>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <img src="images/acreatives-preview.png" height="35" style="width: 50px;" alt="logo" class="hidden-xs hidden-sm" border="0">
+  </button>
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">Sign out</a>
+    </li>
+  </ul>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse mt-4">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column navi">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <span data-feather="home"></span>
+              Dashboard
+            </a>
+          </li>
+
+          <ul class="nav flex-column">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false"><span data-feather="user"></span>Users</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+              <li><a class="dropdown-item" href="mang-new-user.html">New User</a></li>
+              <li><a class="dropdown-item" href="#">View Users</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false"><span data-feather="layers"></span>Projects</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+              <li><a class="dropdown-item" href="#">New Project</a></li>
+              <li><a class="dropdown-item" href="#">Project Lists</a></li>
+            </ul>
+          </li>
+        </ul>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="clock"></span>
+              Periods
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="copy"></span>
+              Copy
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="log-out" data-inline="true"></span>
+              Log Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <!-- <h1 class="h2">Management Module</h1> -->
+        <p class="cloud-text hero">Management Module</p>
+      </div>
+      
+      <div class="row g-3">
+        
+        <div class="col p-4">
+          <div class="card">
+              <h5 class="card-header font-weight-light"><i class="fa fa-user" aria-hidden="true"></i>  View Users</h5>
+              <div class="card-body">
+                <!-- <h2>Entries</h2> -->
+                <div class="row mb-3">
+                  <div class="col-md-3 themed-grid-col mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Show</option>
+                      <option value="1">10</option>
+                      <option value="2">25</option>
+                      <option value="3">50</option>
+                      <option value="4">100</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6 themed-grid-col"> Sam, This Search works --->>></div>
+                  <div class="col-md-3 themed-grid-col mb-3">
+                    <input type="text" class="form-control" onkeyup="myFunction()" id="myInput" placeholder="Search for Users...">
+                    </div>
+                </div>
+                <div class="table-responsive">
+                  <table id="myTable" class="table table-striped table-sm table table-bordered dt-responsive nowrap" cellspacing="0"
+                  width="100%">
+                    <thead>
+                      <tr class="header">
+                        <th>NAME</th>
+                        <th>ROLE</th>
+                        <th>EMAIL</th>
+                        <th>PHONE</th>
+                        <th>STATUS</th>
+                        <th>DATE ADDED</th>
+                        <th>REFERENCE</th>
+                        <th>ACTION</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Oluwafemi Ifesanmi</td>
+                                <td>Set Supervisor</td>
+                                <td>ifesanmi@gmail.com</td>
+                                <td>09001</td>
+                                <!-- <span class="label label-default">Default Label</span> -->
+                                <td><button type="button" class="btn btn-sm btn-success">Active</button></td>
+                                <td>Mar 18, 2021 12:17AM</td>
+                                <td>Hello world</td>
+                                <td>
+                                    <a href="#" class="btn btn-sm btn-success"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="View User"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="btn btn-sm btn-warning"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="Edit Entry"><i class="fa fa-edit"></i></i></a>
+
+
+                                </td>
+                      </tr>
+                      <tr>
+                        <td>TIMILEHIN KADIRI</td>
+                        <td>Set Supervisor</td>
+                        <td>timim@gmail.com</td>
+                        <td>08100009</td>
+
+                        <td><button type="button" class="btn btn-sm btn-sm btn-success">Active</button></td>
+                        <td>Mar 09, 2021 11:40AM</td>
+                        <td>Hello world</td>
+                        <td>
+                          <a href="#" class="btn btn-sm btn-success"
+                          data-toggle="tooltip" data-placement="top"
+                          title="" data-original-title="View User"><i class="fa fa-eye"></i></a>
+                       <a href="#" class="btn btn-sm btn-warning"
+                          data-toggle="tooltip" data-placement="top"
+                          title="" data-original-title="Edit Entry"><i class="fa fa-edit"></i></i></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Abraham Popogbe</td>
+                                <td>Set Supervisor</td>
+                                <td>popsabram@yahoo.com</td>
+                                <td>0803438</td>
+
+                                <td><button type="button" class="btn btn-sm btn-success">Active</button></td>
+                                <td>Dec 10, 2020 11:45AM</td>
+                                <td>Hello world</td>
+                                <td>
+                                    <a href="#" class="btn btn-sm btn-success"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="View User"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="btn btn-sm btn-warning"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="Edit Entry"><i class="fa fa-edit"></i></i></a>
+
+
+                                </td>
+                      </tr>
+                      <tr>
+                        <td>Femi Ifesanmi</td>
+                                <td>Set Supervisor</td>
+                                <td>ifesanmi@gmail.com</td>
+                                <td>08366</td>
+
+                                <td><button type="button" class="btn btn-sm btn-danger">Inactive</button></td>
+                                <td>Nov 09, 2020 10:38AM</td>
+                                <td>Hello world</td>
+                                <td>
+                                    <a href="#" class="btn btn-sm btn-success"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="View User"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="btn btn-sm btn-warning"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="Edit Entry"><i class="fa fa-edit"></i></i></a>
+
+
+                                </td>
+                      </tr>
+                      <tr>
+                        <td>Uche Nwokede</td>
+                                <td>Set Supervisor</td>
+                                <td>e.p@poumedia.com</td>
+                                <td>123</td>
+
+                                <td><button type="button" class="btn btn-sm btn-danger">Inactive</button></td>
+                                <td>Oct 06, 2020 12:26PM</td>
+                                <td>Hello world</td>
+                                <td>
+                                    <a href="#" class="btn btn-sm btn-success"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="View User"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="btn btn-sm btn-warning"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="Edit Entry"><i class="fa fa-edit"></i></i></a>
+
+
+                                </td>
+                      </tr>
+                      <tr>
+                        <td>Grace Sobande</td>
+                                <td>Set Supervisor</td>
+                                <td>gre@aione.com.ng</td>
+                                <td>08117</td>
+
+                                <td><button type="button" class="btn btn-sm btn-success">Active</button></td>
+                                <td>Sep 24, 2020 10:43AM</td>
+                                <td>Hello world</td>
+                                <td>
+                                    <a href="#" class="btn btn-sm btn-success"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="View User"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="btn btn-sm btn-warning"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="Edit Entry"><i class="fa fa-edit"></i></i></a>
+
+
+                                </td>
+                      </tr>
+                      <tr>
+                        <td>Oluwaseun Badejo</td>
+                                <td>Set Supervisor</td>
+                                <td>fce@one1mgt.com</td>
+                                <td>08170275</td>
+
+                                <td><button type="button" class="btn btn-sm btn-danger">Inactive</button></td>
+                                <td>Aug 24, 2020 04:26PM</td>
+                                <td>Hello world</td>
+                                <td>
+                                    <a href="#" class="btn btn-sm btn-success"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="View User"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="btn btn-sm btn-warning"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="Edit Entry"><i class="fa fa-edit"></i></i></a>
+
+
+                                </td>
+                      </tr>
+                      <tr>
+                        <td>Emem Ema</td>
+                                <td>Set Supervisor</td>
+                                <td>emem@ogt.com</td>
+                                <td>081200</td>
+
+                                <td><button type="button" class="btn btn-sm btn-danger">Inactive</button></td>
+                                <td>Aug 24, 2020 04:26PM</td>
+                                <td>Hello world</td>
+                                <td>
+                                    <a href="#" class="btn btn-sm btn-success"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="View User"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="btn btn-sm btn-warning"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="Edit Entry"><i class="fa fa-edit"></i></i></a>
+
+
+                                </td>
+                      </tr>
+                      <tr>
+                        <td>Delmwa Deshi-Kura</td>
+                                <td>Set Supervisor</td>
+                                <td>di@dellmeductions.com</td>
+                                <td>077578</td>
+
+                                <td><button type="button" class="btn btn-sm btn-danger">Inactive</button></td>
+                                <td>Aug 06, 2020 05:48PM</td>
+                                <td>Hello world</td>
+                                <td>
+                                    <a href="#" class="btn btn-sm btn-success"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="View User"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="btn btn-sm btn-warning"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="Edit Entry"><i class="fa fa-edit"></i></i></a>
+
+
+                                </td>
+                      </tr>
+                      <tr>
+                        <td>Ikechi Nwankwo</td>
+                                <td>Set Supervisor</td>
+                                <td>iko@aie.com.ng</td>
+                                <td>02424</td>
+
+                                <td><button type="button" class="btn btn-sm btn-success">Active</button></td>
+                                <td>Aug 03, 2020 03:26PM</td>
+                                <td>Hello world</td>
+                                <td>
+                                    <a href="#" class="btn btn-sm btn-success"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="View User"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="btn btn-sm btn-warning"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="Edit Entry"><i class="fa fa-edit"></i></i></a>
+
+
+                                </td>
+                      </tr>
+                      <tr>
+                        <td>Ikponmwosa Osakioduwa</td>
+                                <td>Set Supervisor</td>
+                                <td>ik@iuwa.com</td>
+                                <td>+234762</td>
+
+                                <td><button type="button" class="btn btn-sm btn-danger">Inactive</button></td>
+                                <td>Jul 25, 2020 05:40PM</td>
+                                <td>Hello world</td>
+                                <td>
+                                    <a href="#" class="btn btn-sm btn-success"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="View User"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="btn btn-sm btn-warning"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="Edit Entry"><i class="fa fa-edit"></i></i></a>
+
+
+                                </td>
+                      </tr>
+                      <tr>
+                        <td>Ebere Okolie</td>
+                                <td>Set Supervisor</td>
+                                <td>Contact@iuwa.com</td>
+                                <td>+234763</td>
+
+                                <td><button type="button" class="btn btn-sm btn-success">Active</button></td>
+                                <td>Jul 25, 2020 05:40PM</td>
+                                <td>Hello world</td>
+                                <td>
+                                    <a href="#" class="btn btn-sm btn-success"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="View User"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="btn btn-sm btn-warning"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="Edit Entry"><i class="fa fa-edit"></i></i></a>
+
+
+                                </td>
+                      </tr>
+                      <tr>
+                        <td>Rogba</td>
+                        <td>Set Supervisor</td>
+                        <td>roa@gil.com</td>
+                        <td>1234567</td>
+
+                        <td><button type="button" class="btn btn-sm btn-danger">Inactive</button></td>
+                        <td>Jul 24, 2020 11:30AM</td>
+                        <td>Hello world</td>
+                        <td>
+                            <!-- <a href="#" class="btn btn-success"
+                               data-toggle="tooltip" data-placement="top"
+                               title="" data-original-title="View User"><i class="icon-eye-open"></i></a>
+                            <a href="#" class="btn btn-warning"
+                               data-toggle="tooltip" data-placement="top"
+                               title="" data-original-title="Edit Entry"><i class="icon-edit"></i></a> -->
+                               <a href="#" class="btn btn-sm btn-success"
+                               data-toggle="tooltip" data-placement="top"
+                               title="" data-original-title="View User"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="btn btn-sm btn-warning"
+                               data-toggle="tooltip" data-placement="top"
+                               title="" data-original-title="Edit Entry"><i class="fa fa-edit"></i></i></a>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>elo</td>
+                                <td>Set Supervisor</td>
+                                <td>oln@gmail.com</td>
+                                <td>089685</td>
+
+                                <td><button type="button" class="btn btn-sm btn-danger">Inactive</button></td>
+                                <td>Jun 12, 2020 08:22AM</td>
+                                <td>Hello world</td>
+                                <td>
+                                    <a href="#" class="btn btn-sm btn-success"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="View User"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="btn btn-sm btn-warning"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="Edit Entry"><i class="fa fa-edit"></i></i></a>
+
+
+                                </td>
+                      </tr>
+                      <tr>
+                        <td>Bimbo Akindele</td>
+                                <td>Set Supervisor</td>
+                                <td>akih@gmail.com</td>
+                                <td>09550</td>
+                                <td><button type="button" class="btn btn-sm btn-success">Active</button></td>
+                                <td>Jun 12, 2020 08:13AM</td>
+                                <td>Hello world</td>
+                                <td>
+                                    <a href="#" class="btn btn-sm btn-success"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="View User"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="btn btn-sm btn-warning"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="Edit Entry"><i class="fa fa-edit"></i></i></a>
+
+
+                                </td>
+                      </tr>
+                      <tr>
+                        <td>Seyi Popogbe</td>
+                                <td>Set Supervisor</td>
+                                <td>popseyi@yahoo.com</td>
+                                <td>0803438</td>
+                                <td><button type="button" class="btn btn-sm btn-success">Active</button></td>
+                                <td>Dec 10, 2020 11:45AM</td>
+                                <td>Hello world</td>
+                                <td>
+                                    <a href="#" class="btn btn-sm btn-success"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="View User"><i class="fa fa-eye"></i></a>
+                                    <a href="#" class="btn btn-sm btn-warning"
+                                       data-toggle="tooltip" data-placement="top"
+                                       title="" data-original-title="Edit Entry"><i class="fa fa-edit"></i></i></a>
+
+
+                                </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="row mb-3">
+                    <div class="col-md-3 themed-grid-col">Showing 1 to 10 of 74 entries</div>
+                    <div class="col-md-6 themed-grid-col"></div>
+                    <div class="col-md-3 themed-grid-col">
+                  <!-- <nav aria-label="Standard pagination example">
+                    <ul class="pagination pagination-sm">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav> -->
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end pagination-sm">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                  </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    </main>
+  </div>
+</div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+      <script src="js/dashboard.js"></script>
+  </body>
+</html>

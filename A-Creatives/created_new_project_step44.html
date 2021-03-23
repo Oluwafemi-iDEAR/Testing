@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>New Project</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/dashboard/">
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/3.3.2/select2.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  
+
+    <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body{background-color:#F9F9FC;font-family: 'Roboto', sans-serif;font-size:14px;}
+      .select2-container {
+          padding: 0;
+          border: none;
+      }
+      h3{margin-bottom:0;}
+      .card{box-shadow: 0 0 13px 0 rgba(82,63,105,.05);background-color: #fafafa;margin-bottom: 20px;border-radius: 4px;padding: 20px;}
+      .select2-choice {
+          display: block;
+          width: 100%;
+          height: calc(1.5em + .75rem + 2px) !important;
+          padding: .375rem .75rem !important;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.5 !important;
+          color: #495057;
+          background-color: #fff;
+          background-clip: padding-box;
+          border: 1px solid #ced4da;
+          border-radius: .25rem;
+          transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      }
+  </style>
+    
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+
+  </head>
+  <body class="hero">
+    
+<header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+  <div class="logo navbar-brand col-md-3 col-lg-2 me-0 px-3">
+    <a hef="home.html">
+      <div class="register-left">
+        <img src="images/Mnet_Brand_largesquare.png" height="35" style="width: 50px;" alt="logo" class="hidden-xs hidden-sm" border="0">
+      </div>  
+    </a>
+  </div>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <img src="images/acreatives-preview.png" height="35" style="width: 50px;" alt="logo" class="hidden-xs hidden-sm" border="0">
+  </button>
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">Sign out</a>
+    </li>
+  </ul>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse mt-4">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column navi">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">
+              <span data-feather="home"></span>
+              Dashboard
+            </a>
+          </li>
+
+          <ul class="nav flex-column">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false"><span data-feather="user"></span>Users</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+              <li><a class="dropdown-item" href="mang-new-user.html">New User</a></li>
+              <li><a class="dropdown-item" href="#">View Users</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false"><span data-feather="layers"></span>Projects</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+              <li><a class="dropdown-item" href="#">New Project</a></li>
+              <li><a class="dropdown-item" href="#">Project Lists</a></li>
+            </ul>
+          </li>
+        </ul>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="clock"></span>
+              Periods
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="copy"></span>
+              Copy
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="log-out" data-inline="true"></span>
+              Log Out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <p class="cloud-text hero"><strong>Management Module</strong> </p>
+      </div>
+      
+      <div class="row g-3">
+        <div class="col p-4">
+          <div class="card animated bounceInDown myForm">
+              <h5 class="card-header font-weight-light"><i class="fa fa-user" aria-hidden="true"></i>  View Users</h5>
+              <div class="card-body">
+        
+                <div class="container">
+                  <div class="margin-t-md">
+                      <div class="customer-form">
+              
+                          <form action="#" method="post" role="form" autocomplete="off">
+                
+                      <div id="main-container">
+                          <div class="panel card container-item">
+                              <div class="panel-body">
+                                  <div class="panel-body">
+              
+                                             
+                              <div class="row">
+                                <div class="col-sm-3">
+                                  <div class="form-group">
+                                    <h5 style="color: #495057 !important; text-align: center;">Cost Description</h5>
+                                    <!-- <select class="form-control select2 select2-init major selectFilter" data-target="sub"> -->
+                                      <select class="form-control major selectFilter" data-target="sub">
+                                        <option value="-1"> Select One </option>
+                                        <option data-ref="r&d">Research & Development</option>
+                                        <option data-ref="tal">Talent </option>
+                                        <option data-ref="et">Executive Team </option>
+                                        <option data-ref="pc">Production Costs</option>
+                                        <option data-ref="ppc">Post Production Costs</option>
+                                        <option data-ref="os">Overheads </option>
+                                        <option data-ref="oc">Other Costs </option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-sm-3">
+                                  <div class="form-group">
+                                    <h5 style="color: #495057 !important; text-align: center;">Cost Description</h5>
+                                    <select class="form-control sub selectFilter" data-target="minor">
+                                      <option value="-1"> Select One </option>
+                                      <option data-ref="rcd" data-belong="r&d">Research & Creative Development</option>
+                                      <option data-ref="ss" data-belong="r&d">Scripts </option>
+                                      <option data-ref="rls" data-belong="r&d">RECCE 1 - Location Selection</option>
+                                      <option data-ref="pe" data-belong="r&d">Pilot Episoode</option>
+                                      <option data-ref="cs" data-belong="tal">Casting & Selection</option>
+                                      <option data-ref="tale" data-belong="tal">Talent </option>
+                                      <option data-ref="eteam" data-belong="et">Executive Team </option>
+                                      <option data-ref="dt" data-belong="pc">Directors Team </option>
+                                      <option data-ref="pt" data-belong="pc">Production Team </option>
+                                      <option data-ref="ad" data-belong="pc">Accounts Department</option>
+                                      <option data-ref="td" data-belong="pc">Technical Department</option>
+                                      <option data-ref="cd" data-belong="pc">Camera Department</option>
+                                      <option data-ref="sd" data-belong="pc">Sound Department</option>
+                                      <option data-ref="ld" data-belong="pc">Lighting Department</option>
+                                      <option data-ref="gd" data-belong="pc">Grips Department</option>
+                                      <option data-ref="su" data-belong="pc">Second Unit(B-Roll) </option>
+                                      <option data-ref="art" data-belong="pc">Art Department</option>
+                                      <option data-ref="cm" data-belong="pc">Custumes & Make-up</option>
+                                      <option data-ref="loc" data-belong="pc">Locations</option>
+                                      <option data-ref="hs" data-belong="pc">Health & Safety</option>
+                                      <option data-ref="tl" data-belong="pc">Transport & Logistics</option>
+                                      <option data-ref="hl" data-belong="pc">Hotel & Living</option>
+                                      <option data-ref="pd" data-belong="pc">Per Diems</option>
+                                      <option data-ref="pp" data-belong="ppc">Post Production</option>
+                                      <option data-ref="over" data-belong="os">Overheads</option>
+                                      <option data-ref="pa" data-belong="oc">Production Administration</option>
+                                      <option data-ref="sc" data-belong="oc">Statutory Costs</option>
+                                      <option data-ref="insu" data-belong="oc">Insurance</option>
+                                      <option data-ref="fc" data-belong="oc">Format Costs</option>
+                                      <option data-ref="cb" data-belong="oc">Completion Bond </option>
+                                      <option data-ref="cbb" data-belong="oc">Contingency/Billbacks/Barters</option>
+                                      <option data-ref="pm" data-belong="oc">Prize Money</option>
+                                      <option data-ref="dpm" data-belong="oc">Distribution/Publicity & Marketing</option>
+                                    </select>
+                                    
+                                </div>
+                                </div>
+                                <div class="col-sm-3">
+                                  <div class="form-group">
+                                  <h5 style="color: #495057 !important; text-align: center;">Cost Description</h5>
+                                  <select class="form-control minor selectFilter">
+                                    <option value="-1"> Select One </option>
+                                    <option data-belong="tale">Presenters</option>
+                                    <option data-belong="tale">Lead Roles </option>
+                                    <option data-belong="tale">Supporting Leads </option>
+                                    <option data-belong="tale">Cameo roles </option>
+                                    <option data-belong="tale">Bit Parts</option>
+                                    <option data-belong="tale">Featured One-liner/Day players</option>
+                                    <option data-belong="tale">FEATURED EXTRAS (NON-SPEAKING)</option>
+                                    <option data-belong="tale">BACKGROUND EXTRAS</option>
+                                    <option data-belong="tale">CROWD EXTRAS </option>
+                                    <option data-belong="tale">STAND-IN ROLES</option>
+                                    <option data-belong="tale">STUNT DOUBLES</option>
+                                    <option data-belong="tale">CHOREOGRAPHY</option>
+                                    <option data-belong="tale">DANCERS</option>
+                                    <option data-belong="tale">MUSICIANS - BAND</option>
+                                    <option data-belong="tale">BACKING VOCALS</option>
+                                    <option data-belong="eteam">PRODUCERS - SHOWRUNNERS </option>
+                                    <option data-belong="eteam">PRODUCERS - EXECUTIVE </option>
+                                    <option data-belong="eteam">PRODUCERS - CONSULTING </option>
+                                    <option data-belong="eteam">PRODUCERS - ASSOCIATED </option>
+                                    <option data-belong="eteam">PRODUCERS - CREATIVE </option>
+                                    <option data-belong="dt">DIRECTORS </option>
+                                    <option data-belong="dt">CONTENT DIRECTORS </option>
+                                    <option data-belong="dt">ASSISTANT DIRECTORS </option>
+                                    <option data-belong="dt">SCRIPT & CONTINUITY </option>
+                                    <option data-belong="dt">DIRECTOR TEAM COSTS </option>
+                                    <option data-belong="art">ART DEPARTMENT </option>
+                                    <option data-belong="art">SET DEPARTMENT </option>
+                                    <option data-belong="art">PROPS DEPARTMENT </option>
+                                    <option data-belong="art">INTERACTIVE TEAM (GAMES ETC.)</option>
+                                    <option data-belong="art">ACTION VEHICLES</option>
+                                    <option data-belong="art">PICTURE ANIMALS </option>
+                                    <option data-belong="art">STUNTS</option>
+                                    <option data-belong="art">ARMOURY </option>
+                                    <option data-belong="art">SPECIAL EFFECTS </option>
+                                    <option data-belong="cm">MAKE-UP & HAIR</option>
+                                    <option data-belong="cm">WARDROBE</option>
+                                    <option data-belong="loc">FIXERS / LOCATION SCOUTS / LOC MANAGERS</option>
+                                    <option data-belong="loc">STUDIO</option>
+                                    <option data-belong="loc">OB  / UPLINK COSTS</option>
+                                    <option data-belong="loc">LOCATION FEES</option>
+                                    <option data-belong="loc">PERMITS & METRO</option>
+                                    <option data-belong="loc">UNIT</option>
+                                    <option data-belong="hs">SECURITY</option>
+                                    <option data-belong="hs">SAFETY OFFICER & MEDICS</option>
+                                    <option data-belong="hs">MEDICAL EXPENSES</option>
+                                    <option data-belong="hs">COVID-19 SAFETY</option>
+                                    <option data-belong="tl">VEHICLES</option>
+                                    <option data-belong="tl">FUEL / PARKING / TOLLS / SHUTTLES ETC.</option>
+                                    <option data-belong="tl">FREIGHT & SHIPPING</option>
+                                    <option data-belong="tl">FLIGHTS</option>
+                                    <option data-belong="pp">STOCK</option>
+                                    <option data-belong="pp">ARCHIVE MATERIALS</option>
+                                    <option data-belong="pp">MUSIC</option>
+                                    <option data-belong="pp">GRAPHICS</option>
+                                    <option data-belong="pp">PICTURE EDIT</option>
+                                    <option data-belong="pp">DIGITAL EFFECTS</option>
+                                    <option data-belong="pp">SOUND EDIT</option>
+                                    <option data-belong="over">GENERAL OVERHEADS</option>
+                                    <option data-belong="over">SOFTWARE</option>
+                                    <option data-belong="over">LEGAL, AUDITING & BANKING</option>
+                                  </select>
+                                  </div>
+                              </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                      <h5 style="color: #495057 !important; text-align: center;">Amount</h5>
+                                        <input type="number" id="customer-last_name" class="form-control total" name="Customer[last_name]"
+                                               maxlength="64" aria-required="true" placeholder="0.00">
+            
+                                    </div>
+                                </div>
+                            </div>
+              
+                            <div class="row">
+                                <div class="col-sm-12 mt-3">
+                                    <div>
+                                        <a href="javascript:void(0)" class="remove-item btn btn-sm btn-danger remove-social-media">Remove</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                              </div>
+                              <div class="row card">
+                                  <div class="col-md-4">
+                                      <a class="btn btn-success btn-sm mx-3" id="add-more" href="javascript:;" role="button"><i class="fa fa-plus"></i> Add more</a>
+                                      <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                                  </div>
+                                  <div class="col-md-4"></div>
+                              <div class="col-md-4">
+                                <!-- <label class="control-label" for="customer-first_name">First name</label> -->
+                                <input type="text" id="result" class="form-control mt-3" aria-required="true" placeholder="Total">
+                              </div>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+   
+              </div>
+          </div>
+      </div>
+    </div>
+    </main>
+  </div>
+</div>
+
+<!--   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/3.3.2/select2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.js"></script>
+<script src="https://cdn.ckeditor.com/4.5.1/standard/ckeditor.js"></script>
+<script src="js/cloneData.js" type="text/javascript"></script>
+<script>
+    $('a#add-more').cloneData({
+        mainContainerId: 'main-container', // Main container Should be ID
+        cloneContainer: 'container-item', // Which you want to clone
+        removeButtonClass: 'remove-item', // Remove button for remove cloned HTML
+        removeConfirm: true, // default true confirm before delete clone item
+        removeConfirmMessage: 'Are you sure want to delete this field?', // confirm delete message
+        //append: '<a href="javascript:void(0)" class="remove-item btn btn-sm btn-danger remove-social-media">Remove</a>', // Set extra HTML append to clone HTML
+        minLimit: 1, // Default 1 set minimum clone HTML required
+        maxLimit: 200, // Default unlimited or set maximum limit of clone HTML
+        defaultRender: 1,
+        init: function () {
+            console.info(':: Initialize Plugin ::');
+        },
+        beforeRender: function () {
+            console.info(':: Before rendered callback called');
+        },
+        afterRender: function () {
+            console.info(':: After rendered callback called');
+            //$(".selectpicker").selectpicker('refresh');
+        },
+        afterRemove: function () {
+            console.warn(':: After remove callback called');
+        },
+        beforeRemove: function () {
+            console.warn(':: Before remove callback called');
+        }
+
+    });
+
+    $(document).ready(function () {
+        $('.datepicker').datepicker();
+    });
+
+</script>
+
+<script>
+  $('.form-group').on('input','.total', function(){
+    var totalSum = 0;
+    $('.form-group .total').each(function(){
+      var inputVal = $(this).val();
+      if($.isNumeric(inputVal)){
+        totalSum += parseFloat(inputVal);
+      }
+    });
+    $('#result').val(totalSum);
+  });
+</script>
+<script src="js/selectFilter.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+    <style>
+      .bg {
+  /* The image used */
+  background-image: url("images/landscape.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+    </style>
+</head>
+<body> 
+
+<div class="bg">  
+<div class="container forget-password">
+    <div class="row">
+        <div class="col-md-12 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="text-center">
+                        <div class="register-left">
+                        <img src="images/Mnet_Brand_largesquare.png" alt="logo" border="0">
+                        </div>
+                        <h2 class="text-center">Welcome <strong>Oluwafemi</strong></h2>
+                        <p>Please select a project</p>
+                        <form id="register-form" role="form" autocomplete="off" class="form" method="post">
+                            
+                            <div class="form-group">
+                                
+                                <div>
+                                      <!-- Please Note that these lists are just samples -->
+                                      <div class="creative">
+                                      <select class="form-control">
+                                          <option value="-1"> Select Project </option>
+                                          <option data-belong="18">Forbidden</option>	
+                                          <option data-belong="18">My Flatmate</option>	
+                                          <option data-belong="18">EVE</option>
+                                          <option data-belong="20">Love Come Back</option>
+                                          <option data-belong="20">Unmarried Season 2</option>
+                                          <option data-belong="20">I AM LAYCON</option>	
+                                          <option data-belong="21">My Flatmate S6</option>
+                                      </select>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn-block btnLogin">Continue</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>
