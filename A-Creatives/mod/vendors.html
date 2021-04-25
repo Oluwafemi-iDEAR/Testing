@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendors | Normal</title>
+    <link rel="stylesheet" type="text/css" href="css/mod.css">
+    <link href="images/acreatives-preview.png" rel="icon" type="image/png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+
+$('ul li a').click(function() {
+$('ul li.active').removeClass('active');
+$(this).closest('li').addClass('active');
+});
+
+});
+    </script>
+    <style type="text/css">
+
+        .miner {
+            overflow-y: scroll;
+            height: 200px;
+        }
+
+        .pagination-outer {
+     text-align: center
+ }
+
+ .pagination {
+     background-color: #fff;
+     border-radius: 25px !important;
+     overflow: hidden;
+     border: none !important
+ }
+
+ a:focus,
+ a:active {
+     outline: none !important;
+     box-shadow: none !important
+ }
+
+ .fa {
+     font-size: 11px;
+     vertical-align: middle !important;
+ }
+
+ .pagination li.active .fa {
+     color: #fff !important
+ }
+
+ .pagination li a.page-link {
+     color: #505050;
+     background-color: transparent;
+     font-size: 17px;
+     font-weight: 600;
+     padding: 17px 25px;
+     border: none;
+     transition: all 0.3s ease 0s
+ }
+
+ .fa-home {
+     transform: scale(1.4, 1.4)
+ }
+
+ .pagination li:last-child a.page-link {
+     border: none
+ }
+
+ .pagination li.active a.page-link,
+ .pagination li a.page-link:hover,
+ .pagination li.active a.page-link:hover {
+     background-color: transparent
+ }
+
+ .pagination li a.page-link:after {
+     content: '';
+     background-color: #8142f5 !important;
+     height: 100%;
+     width: 100%;
+     transform: scaleY(0);
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     z-index: -1;
+     transition: all 0.3s
+ }
+
+ .pagination li.active a.page-link:after,
+ .pagination li a.page-link:hover:after,
+ .pagination li.active a.page-link:hover:after {
+     transform: scaleY(1);
+     border-radius: 25px !important
+ }
+
+ @media (max-width: 767px) {
+     .pagination li a.page-link {
+         padding: 11px 8px !important
+     }
+
+     .fa {
+         font-size: 9px !important
+     }
+
+     li a {
+         font-size: 12px !important
+     }
+
+     .page-item+.page-item {
+         padding-left: 0 !important
+     }
+ }
+ 
+/******************* Accordion Demo - 4 *****************/
+#accordion4 .panel{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0 0 10px;
+    overflow: hidden;
+    position: relative;
+}
+#accordion4 .panel-heading{
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+}
+#accordion4 .panel-heading:before,
+#accordion4 .panel-heading:after{
+    content: "";
+    width: 50%;
+    height: 20%;
+    box-shadow: 0 15px 5px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    transform: rotate(-3deg);
+    z-index: -1;
+}
+#accordion4 .panel-heading:after{
+    left: auto;
+    right: 10px;
+    transform: rotate(3deg);
+}
+h4.panel-title{margin:10px 0px !important;}
+#accordion4 .panel-title a{
+    display: block;
+    padding: 15px 70px 15px 70px;
+    margin: 0;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #23428a;
+    border-radius: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+}
+#accordion4 .panel-title a:before,
+#accordion4 .panel-title a.collapsed:before{
+    content: "\f106";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    width: 55px;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    border-left: 2px solid #23428a;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#accordion4 .panel-title a.collapsed:before{ content: "\f107"; }
+#accordion4 .panel-title a .icon{
+    display: inline-block;
+    width: 55px;
+    height: 100%;
+    border-right: 2px solid #23428a;
+    font-size: 20px;
+    color: rgba(0,0,0,0.7);
+    line-height: 50px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#accordion4 .panel-body{
+    padding: 10px 15px;
+    margin: 0 0 20px;
+    border-bottom: 3px solid #23428a;
+    border-top: none;
+    background: #fff;
+    font-size: 15px;
+    color: #333;
+    line-height: 27px;
+}
+    hr{
+        padding: 10px 15px;
+    margin: 0 0 20px;
+    border-bottom: 3px solid #23428a;
+    border-top: none;
+    background: #fff;
+    }
+    
+    </style>
+
+</head>
+<body class="hero">
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark" style="background-color: #013264 !important;">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+            <img src="images/acreatives-preview.png" height="35" style="width: 50px;" alt="logo" class="hidden-xs hidden-sm" border="3px">
+        </button>
+        <a class="navbar-brand" href="#">
+            <div class="logo">
+                    <a href="#"><div class="register-left">
+                        <img src="images/Mnet_Brand_largesquare.png" height="35" style="width: 40px;" alt="logo" class="hidden-xs hidden-sm" border="0">
+                        </div>  
+                        </a>
+                </div>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="https://oluwafemi-idear.github.io/yddweb/wp-content/uploads/sites/13/2015/01/Teenage-1400-x-450.jpg" class="visible-xs visible-sm circle-logo" alt="user">
+                        <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="navbar-content">
+                                <span>OS Ifesanmi</span>
+                                <p class="text-muted small">
+                                    me@ifesanmios.com
+                                </p>
+                                <div class="divider">
+                                </div>
+                                <a href="#" class="view btn-sm active">View Profile</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#top">Dashboard <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown d-sm-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Journals</a>
+                    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                        <a class="dropdown-item" href="#top">New Journal</a>
+                        <a class="dropdown-item" href="#top">View Journal</a>
+                        <a class="dropdown-item" href="#top">Inflow Planner</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-sm-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Project Expenses </a>
+                    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                        <a class="dropdown-item" href="#top">Acquisitions</a>
+                        <a class="dropdown-item" href="#top">Day Players</a>
+                        <a class="dropdown-item" href="#top">Operational Expenses</a>
+                        <a class="dropdown-item" href="#top">Salaries</a>
+                        <a class="dropdown-item" href="#top">Rentals</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-sm-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vendors</a>
+                    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                        <a class="dropdown-item" href="#top">New Vendor</a>
+                        <a class="dropdown-item" href="#top">View Vendors</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-sm-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Reports </a>
+                    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                        <a class="dropdown-item" href="#top">Asset Listings</a>
+                        <a class="dropdown-item" href="#top">Budget Sub Report</a>
+                        <a class="dropdown-item" href="#top">GL Spools</a>
+                        <a class="dropdown-item" href="#top">Project Expenses</a>
+                        <a class="dropdown-item" href="#top">Reconcilation Ledger</a>
+                        <a class="dropdown-item" href="#top">Trial Balance</a>
+                        <a class="dropdown-item" href="#top">Vendor Reports</a>
+                        <a class="dropdown-item" href="#top">WHT Reports</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-sm-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Library</a>
+                    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                        <a class="dropdown-item" href="#top">New Item</a>
+                        <a class="dropdown-item" href="#top">View Items</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-sm-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
+                    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                        <a class="dropdown-item" href="#top">Episodes Update</a>
+                        <a class="dropdown-item" href="#top">Change Password</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#top">Reversals</a>
+                </li>
+                <li class="nav-item dropdown d-sm-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consolidation</a>
+                    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                        <a class="dropdown-item" href="#top">Forcast</a>
+                        <a class="dropdown-item" href="#top">Total Cost Analysis</a>
+                        <a class="dropdown-item" href="#top">Budget Analysis</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#top"> <span class="menu-collapsed">Transaction Status<span class="badge badge-pill badge-primary ml-2">5</span></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#top">Log-out</a>
+                </li>
+            </ul>
+        </div>
+    </nav><!-- NavBar END -->
+    <!-- Bootstrap row -->
+    <div class="row" id="body-row">
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+            <!-- d-* hiddens the Sidebar in smaller devices. Its items can be kept on the Navbar 'Menu' -->
+            <!-- Bootstrap List Group -->
+            <ul class="list-group">
+                <!-- Separator with title -->
+                <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                    <small>Project Title</small>
+                </li>
+                <!-- /END Separator -->
+                <!-- Menu with submenu -->
+                
+                <a href="#" class="bg-dark list-group-item list-group-item-action active">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-dashboard fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Dashboard</span>
+                    </div>
+                </a>
+
+                <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-book fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Journals</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu1' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">New Journal</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">View Journals</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Inflow Planner</span>
+                    </a>
+                </div>
+                
+                <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-file fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Project Expenses</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <div id='submenu2' class="collapse sidebar-submenu">
+                    <!-- <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Project Expenses</span>
+                    </a> -->
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Acquisitions</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Day Players</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Operational Expenses</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Salaries</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Rentals</span>
+                    </a>
+                </div>
+
+                
+                <a href="#submenu3" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-user fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Vendors</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu3' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">New Vendor</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">View Vendors</span>
+                    </a>
+                 </div>                
+                
+                <a href="#submenu4" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-folder-open fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Reports</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <div id='submenu4' class="collapse sidebar-submenu">
+                    <!-- <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Project Expenses</span>
+                    </a> -->
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Asset Listings</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Budget Sub Report</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">GL Spools</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Project Expenses</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Reconcilation Ledger</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Trial Balance</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Vendor Reports</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">WHT Reports</span>
+                    </a>
+                </div>
+
+                <!-- Separator with title -->
+                <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                    <small>OPTIONS</small>
+                </li>
+                <!-- /END Separator -->
+
+                <a href="#submenu5" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-list fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Library</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a> 
+                <div id='submenu5' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">New Item</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">View Items</span>
+                    </a>
+                </div> 
+
+                <a href="#submenu6" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-gear fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Settings</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a> 
+                <div id='submenu6' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Episode Update</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Change Password</span>
+                    </a>
+                </div> 
+
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-times fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Reversals</span>
+                    </div>
+                </a>
+                <a href="#submenu7" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-list-alt fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Consolidation</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a> 
+                <div id='submenu7' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Forcast</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Total Cost Analysis</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Budget Analysis</span>
+                    </a>
+                </div> 
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-clock-o fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Transaction Status<span class="badge badge-pill badge-primary ml-2">5</span></span>
+                    </div>
+                </a>
+                <!-- Separator without title -->
+                <li class="list-group-item sidebar-separator menu-collapsed"></li>
+                <!-- /END Separator -->
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-sign-out fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Logout</span>
+                    </div>
+                </a>
+                <a href="#top" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                        <span id="collapse-text" class="menu-collapsed">Collapse</span>
+                    </div>
+                </a>
+            </ul><!-- List Group END-->
+        </div><!-- sidebar-container END -->
+
+
+
+
+        
+        <!-- MAIN -->
+        
+        <div class="col py-4">
+            <div class=" container d-flex justify-content-center">
+                <ul class="pagination shadow-lg">
+                    <li class="page-item active "><a class="page-link" href="#"><i class="fa fa-user mr-1"></i> <small>Normal</small> </a></li>
+                    <li class="page-item "><a class="page-link " href="vendors_cast.html"><i class="fa fa-list-ol mr-1 ml-0"></i><small>Cast &nbsp; </small></a></li>
+                    <li class="page-item "><a class="page-link" href="vendors_crew.html"><i class="fa fa-video-camera mr-1"></i><small>Crew</small></a></li>
+                    <li class="page-item "><a class="page-link" href="vendors_writer.html"><i class="fa fa-edit mr-1"></i><small>Writer</small></a></li>
+                    <li class="page-item "><a class="page-link " href="petty_cash_vendor.html"><i class="fa fa-users mr-1 "></i><small>Petty cash vendors</small></a></li>
+                </ul>
+            </div>
+                <button type="back" class="btn btn-sm btn-dark mb-3">Download Form</button>
+
+           
+        <div class=" container justify-content-center">
+            <div class="card">
+                <h5 class="card-header font-weight-light"><i class="fa fa-user fa-lg"></i> New Normal Vendor</h5>
+                <div class="card-body">
+                    
+                    <form id="edit-profile" action="# href link here" method="POST"
+                          class="form-horizontal" enctype="multipart/form-data">
+                        <input type="hidden" name="_token" value="#key here">
+                        <fieldset>
+                            
+                            <div class="row">
+                                <div class="col-md-6">
+                             <div class="form-group">
+                                <label for="company_name">Name Of Company</label>
+                                    <input type="text" class="form-control" name="company_name"
+                                           value="" id="company_name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="service_type">Types Of Service/Product to be
+                                    offered</label>
+                                <input type="text" class="form-control" id="service_type" name="service_type"
+                                value="" id="service_type" required>
+                              </div>
+
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <textarea class="form-control" id="address" rows="3" name="address" required></textarea>
+                              </div>
+
+                            <div class="form-group">
+                                <label class="control-label" for="company_type">Types of company</label>
+                                <div class="controls">
+                                    <select name="type_of_company" class="form-control">
+                                        <option value="">Select a company</option>
+                                        <option value="sole">Sole Proprietorship</option>
+                                        <option value="partnership">Partnership</option>
+                                        <option value="limited">Limited</option>
+                                        <option value="plc">PLC</option>
+                                        <option value="venture">Venture</option>
+                                        <option value="ngo">NGO</option>
+                                    </select>
+                                </div>
+                            </div>
+                            </div>
+                            
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label" for="tin_no">TAX Authority</label>
+                                <div class="controls">
+                                    <select name="tax_auth" class="form-control">
+                                        <option value="">Select</option>
+                                        <option value="sole" selected>SIRS</option>
+                                        <option value="limited">FIRS</option>
+                                        <option value="ngo">Not Applicable</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" required for="reg_num">Registration Number</label>
+                                <div class="controls">
+                                    <input type="text" class="form-control" value="" name="reg_num"
+                                           id="reg_num">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" required for="tin_no">TAX ID Number</label>
+                                <div class="controls">
+                                    <input type="text" class="form-control" value="" required name="tin_no"
+                                           id="tin_no">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label" required for="vat_reg_num">VAT Registration Number</label>
+                                <div class="controls">
+                                    <input type="text" class="form-control" name="vat_reg_num" value=""
+                                           id="vat_reg_num">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                           
+                                <div class="form-group">
+                                  <label class="control-label" for="docs">Contract Docs</label>
+                                  <input type="file" class="form-control-file" name="docs" id="docs">
+                                </div>
+
+                            <!-- <div class="form-group">
+                                <label class="control-label" for="docs">Contract Docs</label>
+                                <div class="controls">
+                                    <input type="file" class="form-control" name="docs" id="docs">
+                                </div>
+                            </div> -->
+                            <hr/>
+
+                            <div class="row">
+                            <div class="col-md-6">
+                            <h4>Bank Details</h4><br/>
+                            <div class="form-group">
+                                <label class="control-label" for="bank_account_name">Bank Account Name</label>
+                                <div class="controls">
+                                    <input type="text" class="form-control" value=""
+                                           name="bank_account_name"
+                                           id="bank_account_name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="bank_account_number">Bank Account Number</label>
+                                <div class="controls">
+                                    <input type="text" class="form-control" value=""
+                                           name="bank_account_number"
+                                           id="bank_account_number">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="bank_account_type">Bank Account Type</label>
+                                <div class="controls">
+                                    <select name="bank_account_type" class="form-control">
+                                        <option value="savings">Savings</option>
+                                        <option value="current">Current</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="bank_name_id">Bank Name</label>
+                                <div class="controls">
+                                    <select class="form-control" name="bank_name_id"><option value="1">Access Bank Plc</option><option value="2">Citibank Nigeria Limited</option><option value="3">Diamond Bank Plc</option><option value="4">First City Monument Bank Plc</option><option value="5">Ecobank Nigeria Plc</option><option value="6">Enterprise Bank</option><option value="7">Fidelity Bank Plc</option><option value="8">Key Stone Bank</option><option value="9">Polaris Bank Plc</option><option value="10">Stanbic IBTC Bank Ltd</option><option value="11">Standard Chartered Bank Nigeria Ltd</option><option value="12">Sterling Bank Plc</option><option value="13">SunTrust Bank Nigeria Limited</option><option value="14">Union Bank of Nigeria Plc</option><option value="15">Unity  Bank Plc</option><option value="16">Wema Bank Plc</option><option value="17">Zenith Bank Plc</option><option value="18">Heritage Banking Company Ltd</option><option value="19">First Bank Nigeria</option><option value="20">United Bank For Africa Plc</option><option value="21">Stanbic IBTC Bank Ltd</option><option value="22">MainStreet Bank</option><option value="23">Guaranty Trust Bank</option></select>
+
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="col-md-6">
+                            <h4>Contact Details</h4><br/>
+                            
+                            <div class="form-group">
+                                <div class="controls">
+
+                                        <div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="headingOne4">
+                                                    <h4 class="panel-title">
+                                                        <a role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapseOne4" aria-expanded="true" aria-controls="collapseOne4">
+                                                            <i class="icon fa fa-book"></i>
+                                                           Primary Contact Details
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseOne4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne4">
+                                                    <div class="panel-body">
+                                                        
+                                                <div class="form-group">
+                                                    <label class="control-label" for="contact_name[]">Contact
+                                                        Name</label>
+                                                    <div class="controls">
+                                                        <input type="text" class="form-control"
+                                                               name="contact_details[name][2]"
+                                                               id="contact_name[]">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="contact_email[]">Contact
+                                                        Email</label>
+                                                    <div class="controls">
+                                                        <input type="email" class="form-control"
+                                                               name="contact_details[email][2]"
+                                                               id="contact_email[]">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="contact_phone[]">Contact
+                                                        Phone</label>
+                                                    <div class="controls">
+                                                        <input type="text" class="form-control"
+                                                               name="contact_details[phone][2]"
+                                                               id="contact_phone[]">
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading" role="tab" id="headingFive4">
+                                                    <h4 class="panel-title">
+                                                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapseFive4" aria-expanded="false" aria-controls="collapseFive4">
+                                                            <i class="icon fa fa-book"></i>
+                                                            Secondary Contact Datails
+                                                        </a>
+                                                    </h4>
+                                                </div>
+                                                <div id="collapseFive4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive4">
+                                                    <div class="panel-body">
+                                                        
+                                                <div class="form-group">
+                                                    <label class="control-label" for="contact_name[]">Contact
+                                                        Name</label>
+                                                    <div class="controls">
+                                                        <input type="text" class="form-control"
+                                                               name="contact_details[name][2]"
+                                                               id="contact_name[]">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="contact_email[]">Contact
+                                                        Email</label>
+                                                    <div class="controls">
+                                                        <input type="email" class="form-control"
+                                                               name="contact_details[email][2]"
+                                                               id="contact_email[]">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label" for="contact_phone[]">Contact
+                                                        Phone</label>
+                                                    <div class="controls">
+                                                        <input type="text" class="form-control"
+                                                               name="contact_details[phone][2]"
+                                                               id="contact_phone[]">
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+ 
+                                     <!--<div class="accordion" id="accordion2">
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse"
+                                                   data-parent="#accordion2" href="#collapseOne">
+                                                    Primary contact details
+                                                </a>
+                                            </div>
+                                            <div id="collapseOne" class="accordion-body in" style="height: auto;">
+                                                <div class="accordion-inner">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="">Contact Name</label>
+                                                        <div class="controls">
+                                                            <input type="text" class="span4"
+                                                                   name="contact_details[name][1]"
+                                                                   id="contact_name[]">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="">Contact Email</label>
+                                                        <div class="controls">
+                                                            <input type="email" class="span4"
+                                                                   name="contact_details[email][1]"
+                                                                   id="contact_email[]">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="contact_phone[]">Contact
+                                                            Phone</label>
+                                                        <div class="controls">
+                                                            <input type="text" class="span4"
+                                                                   name="contact_details[phone][1]"
+                                                                   id="contact_phone[]">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-group">
+                                            <div class="accordion-heading">
+                                                <a class="accordion-toggle" data-toggle="collapse"
+                                                   data-parent="#accordion2" href="#collapseTwo">
+                                                    Secondary Contact Details
+                                                </a>
+                                            </div>
+                                            <div id="collapseTwo" class="accordion-body collapse">
+                                                <div class="accordion-inner">
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="contact_name[]">Contact
+                                                            Name</label>
+                                                        <div class="controls">
+                                                            <input type="text" class="span4"
+                                                                   name="contact_details[name][2]"
+                                                                   id="contact_name[]">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="contact_email[]">Contact
+                                                            Email</label>
+                                                        <div class="controls">
+                                                            <input type="email" class="span4"
+                                                                   name="contact_details[email][2]"
+                                                                   id="contact_email[]">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="control-label" for="contact_phone[]">Contact
+                                                            Phone</label>
+                                                        <div class="controls">
+                                                            <input type="text" class="span4"
+                                                                   name="contact_details[phone][2]"
+                                                                   id="contact_phone[]">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>  -->
+                                </div> <!-- /controls -->
+                            </div>
+                        </div>
+                        </div>
+
+                            <br>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-sm btn-dark">Save</button>
+
+                            </div> <!-- /form-actions -->
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+     </div>
+
+        </div>
+        
+        <!-- Main Col END -->
+
+        
+    </div><!-- body-row END -->
+
+
+    
+	<script src="js/script.js"></script> <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</body>
+</html>

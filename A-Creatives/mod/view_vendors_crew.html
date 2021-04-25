@@ -1,0 +1,2616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Vendors</title>
+    <link rel="stylesheet" type="text/css" href="css/mod.css">
+    <link href="images/acreatives-preview.png" rel="icon" type="image/png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600"
+      rel="stylesheet"> 
+    <link href="css/addons/datatables.min.css" rel="stylesheet">
+
+    
+    <!-- for breadcrumb -->
+    <script>
+          $(document).ready(function(){
+   $('.first ol li a.active-1').find('span').css('color' , 'white');
+   $('.first ol li a').click(function() {
+   $('.first ol li a.active-1').find('span').css('color' , 'black');
+   $('.first ol li a.active-1').removeClass('active-1');
+   $('.first ol li a.active-1').addClass('text-dark');
+   $(this).closest('a').addClass('active-1');
+   $('.first ol li a.active-1').find('span').css('color' , 'white');
+   });
+
+   });
+    </script>
+     <!-- for breadcrumb ends-->
+
+     
+     <!-- for table select -->
+     
+        <script>
+            $(document).ready(function () {
+  $('#dtBasicExample').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+});
+        </script>
+     <!-- for table select ends-->
+
+     <!-- for search -->
+     <script>
+     </script>
+     <style>
+
+        .miner {
+            overflow-y: scroll;
+            height: 200px;
+        }
+
+/* for breadcrumb */
+        
+ .breadcrumb>li+li:before {
+     content: "" !important
+ }
+
+ .breadcrumb {
+     padding: 19px;
+     font-size: 14px;
+     color: #aaa !important;
+     letter-spacing: 2px;
+     border-radius: 5px !important
+ }
+
+ .first ol {
+     border-top-right-radius: 200px !important;
+     border-bottom-right-radius: 200px !important
+ }
+
+ .first-1 {
+     background-color: white !important
+ }
+
+ a {
+     text-decoration: none !important;
+ }
+
+ a:focus,
+ a:active {
+     outline: none !important;
+     box-shadow: none !important
+ }
+
+ .first span {
+     color: black
+ }
+
+ .first a:hover {
+     color: black !important
+ }
+
+ .active-1 span:hover {
+     color: white !important
+ }
+
+ .active-1 {
+     font-size: 13px !important;
+     padding-bottom: 12px !important;
+     padding-top: 12px !important;
+     padding-right: 25px !important;
+     padding-left: 25px !important;
+     border-radius: 200px !important;
+     background-color: #013264 !important
+ }
+
+ @media (max-width: 767px) {
+     .breadcrumb {
+         font-size: 8px
+     }
+
+     .breadcrumb-item+.breadcrumb-item {
+         padding-left: 0
+     }
+
+     .active-1 {
+         font-size: 8px !important;
+         padding-right: 8px !important;
+         padding-left: 8px !important;
+         background-color: #013264 !important;
+         width: 75% ! important
+     }
+
+     .breadcrumb {
+         letter-spacing: 1px !important
+     }
+
+     .breadcrumb>* div {
+         max-width: 60px
+     }
+ }
+    .btn-danger{
+        width: 37px;
+        font-size: 8.5px;
+    }
+    .btn-primary{
+        width: 37px;
+        font-size: 8.5px;
+        background-color: #013264;
+    }
+/******************* for table *****************/
+
+    </style>
+
+</head>
+<body class="hero">
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark" style="background-color: #013264 !important;">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+            <img src="images/acreatives-preview.png" height="35" style="width: 50px;" alt="logo" class="hidden-xs hidden-sm" border="3px">
+        </button>
+        <a class="navbar-brand" href="#">
+            <div class="logo">
+                    <a href="#"><div class="register-left">
+                        <img src="images/Mnet_Brand_largesquare.png" height="35" style="width: 40px;" alt="logo" class="hidden-xs hidden-sm" border="0">
+                        </div>  
+                        </a>
+                </div>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="https://oluwafemi-idear.github.io/yddweb/wp-content/uploads/sites/13/2015/01/Teenage-1400-x-450.jpg" class="visible-xs visible-sm circle-logo" alt="user">
+                        <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="navbar-content">
+                                <span>OS Ifesanmi</span>
+                                <p class="text-muted small">
+                                    me@ifesanmios.com
+                                </p>
+                                <div class="divider">
+                                </div>
+                                <a href="#" class="view btn-sm active">View Profile</a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#top">Dashboard <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown d-sm-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Journals</a>
+                    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                        <a class="dropdown-item" href="#top">New Journal</a>
+                        <a class="dropdown-item" href="#top">View Journal</a>
+                        <a class="dropdown-item" href="#top">Inflow Planner</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-sm-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Project Expenses </a>
+                    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                        <a class="dropdown-item" href="#top">Acquisitions</a>
+                        <a class="dropdown-item" href="#top">Day Players</a>
+                        <a class="dropdown-item" href="#top">Operational Expenses</a>
+                        <a class="dropdown-item" href="#top">Salaries</a>
+                        <a class="dropdown-item" href="#top">Rentals</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-sm-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vendors</a>
+                    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                        <a class="dropdown-item" href="#top">New Vendor</a>
+                        <a class="dropdown-item" href="#top">View Vendors</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-sm-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Reports </a>
+                    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                        <a class="dropdown-item" href="#top">Asset Listings</a>
+                        <a class="dropdown-item" href="#top">Budget Sub Report</a>
+                        <a class="dropdown-item" href="#top">GL Spools</a>
+                        <a class="dropdown-item" href="#top">Project Expenses</a>
+                        <a class="dropdown-item" href="#top">Reconcilation Ledger</a>
+                        <a class="dropdown-item" href="#top">Trial Balance</a>
+                        <a class="dropdown-item" href="#top">Vendor Reports</a>
+                        <a class="dropdown-item" href="#top">WHT Reports</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-sm-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Library</a>
+                    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                        <a class="dropdown-item" href="#top">New Item</a>
+                        <a class="dropdown-item" href="#top">View Items</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-sm-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
+                    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                        <a class="dropdown-item" href="#top">Episodes Update</a>
+                        <a class="dropdown-item" href="#top">Change Password</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#top">Reversals</a>
+                </li>
+                <li class="nav-item dropdown d-sm-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" id="smallerscreenmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Consolidation</a>
+                    <div class="dropdown-menu" aria-labelledby="smallerscreenmenu">
+                        <a class="dropdown-item" href="#top">Forcast</a>
+                        <a class="dropdown-item" href="#top">Total Cost Analysis</a>
+                        <a class="dropdown-item" href="#top">Budget Analysis</a>
+                    </div>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#top"> <span class="menu-collapsed">Transaction Status<span class="badge badge-pill badge-primary ml-2">5</span></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#top">Log-out</a>
+                </li>
+            </ul>
+        </div>
+    </nav><!-- NavBar END -->
+    <!-- Bootstrap row -->
+    <div class="row" id="body-row">
+        <!-- Sidebar -->
+        <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+            <!-- d-* hiddens the Sidebar in smaller devices. Its items can be kept on the Navbar 'Menu' -->
+            <!-- Bootstrap List Group -->
+            <ul class="list-group">
+                <!-- Separator with title -->
+                <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                    <small>Project Title</small>
+                </li>
+                <!-- /END Separator -->
+                <!-- Menu with submenu -->
+                
+                <a href="#" class="bg-dark list-group-item list-group-item-action active">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-dashboard fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Dashboard</span>
+                    </div>
+                </a>
+
+                <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-book fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Journals</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu1' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">New Journal</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">View Journals</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Inflow Planner</span>
+                    </a>
+                </div>
+                
+                <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-file fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Project Expenses</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <div id='submenu2' class="collapse sidebar-submenu">
+                    <!-- <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Project Expenses</span>
+                    </a> -->
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Acquisitions</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Day Players</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Operational Expenses</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Salaries</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Rentals</span>
+                    </a>
+                </div>
+
+                
+                <a href="#submenu3" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-user fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Vendors</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu3' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">New Vendor</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">View Vendors</span>
+                    </a>
+                 </div>                
+                
+                <a href="#submenu4" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-folder-open fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Reports</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <div id='submenu4' class="collapse sidebar-submenu">
+                    <!-- <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Project Expenses</span>
+                    </a> -->
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Asset Listings</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Budget Sub Report</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">GL Spools</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Project Expenses</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Reconcilation Ledger</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Trial Balance</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">Vendor Reports</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light text-dark">
+                        <span class="menu-collapsed">WHT Reports</span>
+                    </a>
+                </div>
+
+                <!-- Separator with title -->
+                <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                    <small>OPTIONS</small>
+                </li>
+                <!-- /END Separator -->
+
+                <a href="#submenu5" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-list fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Library</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a> 
+                <div id='submenu5' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">New Item</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">View Items</span>
+                    </a>
+                </div> 
+
+                <a href="#submenu6" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-gear fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Settings</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a> 
+                <div id='submenu6' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Episode Update</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Change Password</span>
+                    </a>
+                </div> 
+
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-times fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Reversals</span>
+                    </div>
+                </a>
+                <a href="#submenu7" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-list-alt fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Consolidation</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a> 
+                <div id='submenu7' class="collapse sidebar-submenu">
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Forcast</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Total Cost Analysis</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                        <span class="menu-collapsed">Budget Analysis</span>
+                    </a>
+                </div> 
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-clock-o fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Transaction Status<span class="badge badge-pill badge-primary ml-2">5</span></span>
+                    </div>
+                </a>
+                <!-- Separator without title -->
+                <li class="list-group-item sidebar-separator menu-collapsed"></li>
+                <!-- /END Separator -->
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-sign-out fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Logout</span>
+                    </div>
+                </a>
+                <a href="#top" data-toggle="sidebar-colapse" class="bg-dark list-group-item list-group-item-action d-flex align-items-center">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span id="collapse-icon" class="fa fa-2x mr-3"></span>
+                        <span id="collapse-text" class="menu-collapsed">Collapse</span>
+                    </div>
+                </a>
+            </ul><!-- List Group END-->
+        </div><!-- sidebar-container END -->
+
+
+        
+        <!-- MAIN -->
+        
+        <div class="col py-4">
+        <div class=" container justify-content-center">
+            <div class="row ">
+                <div class="col-auto col-md-10 ">
+                    <nav aria-label="breadcrumb " class="first d-md-flex">
+                        <ol class="breadcrumb indigo lighten-6 first-1 shadow-lg mb-3 ">
+                            <li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase" href="view_vendors_normal.html"><span>Normal</span></a><i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i> </li>
+                            <li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase" href="view_vendors_cast.html"><span>Cast</span></a><i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i></li>
+                            <li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase active-1 " href="#"><span>Crew</span></a><i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i> </li>
+                            <li class="breadcrumb-item font-weight-bold mr-0 pr-0"><a class="black-text " href="view_vendors_writer.html"><span>Writer</span></a><i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i> </li>
+                            <li class="breadcrumb-item font-weight-bold"><a class="black-text text-uppercase " href="view_vendors_pettycash.html"><span>Petty cash</span></a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-3 themed-grid-col mb-3">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Document</option>
+                <option value="1"><a href="#">Excel</a></option>
+                <option value="2"><a href="#">PDF</a></option>
+                <option value="3"><a href="#">CSV</a></option>
+                <option value="4"><a href="#"> Print</a></option>
+              </select>
+            </div>
+            <div class="card">
+                <h5 class="card-header font-weight-light"><i class="fa fa-user fa-lg"></i> New Crew Vendor</h5>
+                <div class="card-body">
+                    <div class="table-responsive">
+                    <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                        <thead>
+                          <tr>
+                            <th class="th-sm">S/N</th>
+                            <th class="th-sm">Name</th>
+                            <th class="th-sm">Project Task</th>
+                            <th class="th-sm">Agreed Rate</th>
+                            <th class="th-sm">Email</th>
+                            <th class="th-sm">Phone</th>
+                            <th class="th-sm">Status</th>
+                            <th class="th-sm">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1
+                                </td>
+                                <td>
+                                    Akehe Mathias  and
+                                    &nbsp;
+                                    others
+                                </td>
+                                <td>
+                                    Research + Development
+                                </td>
+                                <td>
+                                    NGN 390,000.00
+                                </td>
+                                <td>
+                                    jjjkjksbs@jkajkdhl.codkd
+                                </td>
+                                <td>
+                                    3299238484
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    2
+                                </td>
+                                <td>
+                                    Opeyemi
+                                    &nbsp;
+                                    Odugbemi
+                                </td>
+                                <td>
+                                    Producer
+                                </td>
+                                <td>
+                                    NGN 1,500,000.00
+                                </td>
+                                <td>
+                                    Opmod73@yahoo.co.uk
+                                </td>
+                                <td>
+                                    08033040519
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    3
+                                </td>
+                                <td>
+                                    Olajumoke
+                                    &nbsp;
+                                    Adekunle
+                                </td>
+                                <td>
+                                    Producer
+                                </td>
+                                <td>
+                                    NGN 400,000.00
+                                </td>
+                                <td>
+                                    jumokeogunlana@yahoo.com
+                                </td>
+                                <td>
+                                    08078114400
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    4
+                                </td>
+                                <td>
+                                    Mpho
+                                    &nbsp;
+                                    Makhobotlone
+                                </td>
+                                <td>
+                                    Art Department
+                                </td>
+                                <td>
+                                    NGN 1,000,000.00
+                                </td>
+                                <td>
+                                    mphomak@gmail.com
+                                </td>
+                                <td>
+                                    08008
+                                </td>
+                                <td><label class="label label-danger">Inactive</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    5
+                                </td>
+                                <td>
+                                    OMOGBAI
+                                    &nbsp;
+                                    DELE
+                                </td>
+                                <td>
+                                    Producer
+                                </td>
+                                <td>
+                                    NGN 450,000.00
+                                </td>
+                                <td>
+                                    deletruedreams@gmail.com
+                                </td>
+                                <td>
+                                    080
+                                </td>
+                                <td><label class="label label-danger">Inactive</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    6
+                                </td>
+                                <td>
+                                    Risper
+                                    &nbsp;
+                                    Muthamia
+                                </td>
+                                <td>
+                                    Producer
+                                </td>
+                                <td>
+                                    NGN 2,000,000.00
+                                </td>
+                                <td>
+                                    rmuthamia@gmail.com
+                                </td>
+                                <td>
+                                    90909983889
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    7
+                                </td>
+                                <td>
+                                    ALADESE
+                                    &nbsp;
+                                    TENIOLA
+                                </td>
+                                <td>
+                                    Producer
+                                </td>
+                                <td>
+                                    NGN 300,000.00
+                                </td>
+                                <td>
+                                    teniolaaladese@gmail.com
+                                </td>
+                                <td>
+                                    08080062559
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    8
+                                </td>
+                                <td>
+                                    BABATUNDE
+                                    &nbsp;
+                                    TOPE
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 200,000.00
+                                </td>
+                                <td>
+                                    topecious@yahoo.co.uk
+                                </td>
+                                <td>
+                                    08035292512
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    9
+                                </td>
+                                <td>
+                                    OHAZULIKE
+                                    &nbsp;
+                                    OBINNA
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 400,000.00
+                                </td>
+                                <td>
+                                    obiewanne@gmail.com
+                                </td>
+                                <td>
+                                    08063590392
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    10
+                                </td>
+                                <td>
+                                    Sarah
+                                    &nbsp;
+                                    Bassey
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 300,000.00
+                                </td>
+                                <td>
+                                    basseyesarah@gmail.com
+                                </td>
+                                <td>
+                                    08056315622
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    11
+                                </td>
+                                <td>
+                                    ABDULRASHEED
+                                    &nbsp;
+                                    ABDULLAHI
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 60,000.00
+                                </td>
+                                <td>
+                                    A@yahoo.com
+                                </td>
+                                <td>
+                                    07033334672
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    12
+                                </td>
+                                <td>
+                                    WILLIAMS
+                                    &nbsp;
+                                    SARAH
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 60,000.00
+                                </td>
+                                <td>
+                                    sarahw@gmail.com
+                                </td>
+                                <td>
+                                    090
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    13
+                                </td>
+                                <td>
+                                    RAFIU
+                                    &nbsp;
+                                    JOGUNOMI
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 70,000.00
+                                </td>
+                                <td>
+                                    rafiujogunomi@gmail.com
+                                </td>
+                                <td>
+                                    08137624336
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    14
+                                </td>
+                                <td>
+                                    KEHINDE
+                                    &nbsp;
+                                    OYEDEPO
+                                </td>
+                                <td>
+                                    Art Department
+                                </td>
+                                <td>
+                                    NGN 400,000.00
+                                </td>
+                                <td>
+                                    piccasocanvas57@gmail.com
+                                </td>
+                                <td>
+                                    08033652320
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    15
+                                </td>
+                                <td>
+                                    CHIOMA
+                                    &nbsp;
+                                    ILOMUANYA
+                                </td>
+                                <td>
+                                    Art Department
+                                </td>
+                                <td>
+                                    NGN 250,000.00
+                                </td>
+                                <td>
+                                    chiomadavidson@gmail.com
+                                </td>
+                                <td>
+                                    08066881394
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    16
+                                </td>
+                                <td>
+                                    SAHEED
+                                    &nbsp;
+                                    AZEEZ
+                                </td>
+                                <td>
+                                    SET Department
+                                </td>
+                                <td>
+                                    NGN 200,000.00
+                                </td>
+                                <td>
+                                    azeezbiodunsaheed@gmail.com
+                                </td>
+                                <td>
+                                    08028413764
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    17
+                                </td>
+                                <td>
+                                    ADEBOYE
+                                    &nbsp;
+                                    ADEKUNLE
+                                </td>
+                                <td>
+                                    SET Department
+                                </td>
+                                <td>
+                                    NGN 150,000.00
+                                </td>
+                                <td>
+                                    adeboye59@gmail.com
+                                </td>
+                                <td>
+                                    08030826380
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    18
+                                </td>
+                                <td>
+                                    ABIOLA
+                                    &nbsp;
+                                    OLAWALE
+                                </td>
+                                <td>
+                                    SET Department
+                                </td>
+                                <td>
+                                    NGN 120,000.00
+                                </td>
+                                <td>
+                                    abiola1234567@gmail.com
+                                </td>
+                                <td>
+                                    08066754300
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    19
+                                </td>
+                                <td>
+                                    OLASUPO
+                                    &nbsp;
+                                    OLASUNKANMI
+                                </td>
+                                <td>
+                                    SET Department
+                                </td>
+                                <td>
+                                    NGN 120,000.00
+                                </td>
+                                <td>
+                                    olasuposunkenzy@gmail.com
+                                </td>
+                                <td>
+                                    08180685738
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    20
+                                </td>
+                                <td>
+                                    OKUNADE
+                                    &nbsp;
+                                    ADEBAYO
+                                </td>
+                                <td>
+                                    SET Department
+                                </td>
+                                <td>
+                                    NGN 120,000.00
+                                </td>
+                                <td>
+                                    okunadeadebayo1@gamil.com
+                                </td>
+                                <td>
+                                    07038484756
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    21
+                                </td>
+                                <td>
+                                    HASSAN
+                                    &nbsp;
+                                    HARUNA
+                                </td>
+                                <td>
+                                    Props Department
+                                </td>
+                                <td>
+                                    NGN 300,000.00
+                                </td>
+                                <td>
+                                    hassansas538@yahoo.com
+                                </td>
+                                <td>
+                                    080916346655
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    22
+                                </td>
+                                <td>
+                                    MARTHA
+                                    &nbsp;
+                                    JOHN
+                                </td>
+                                <td>
+                                    Wardrobe
+                                </td>
+                                <td>
+                                    NGN 100,000.00
+                                </td>
+                                <td>
+                                    marthajohn@gmail.com
+                                </td>
+                                <td>
+                                    08037686600
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    23
+                                </td>
+                                <td>
+                                    JOHN
+                                    &nbsp;
+                                    MONDAY
+                                </td>
+                                <td>
+                                    Location
+                                </td>
+                                <td>
+                                    NGN 70,000.00
+                                </td>
+                                <td>
+                                    mondayjohnboo12344@gmail.com
+                                </td>
+                                <td>
+                                    08166267548
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    24
+                                </td>
+                                <td>
+                                    TITI
+                                    &nbsp;
+                                    OLATUNDE-RAJI
+                                </td>
+                                <td>
+                                    Wardrobe
+                                </td>
+                                <td>
+                                    NGN 350,000.00
+                                </td>
+                                <td>
+                                    titigbemisola@yahoo.com
+                                </td>
+                                <td>
+                                    08033581956
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    25
+                                </td>
+                                <td>
+                                    IFEOLUWA
+                                    &nbsp;
+                                    AKALA
+                                </td>
+                                <td>
+                                    Wardrobe
+                                </td>
+                                <td>
+                                    NGN 100,000.00
+                                </td>
+                                <td>
+                                    ifeoluwaakala@gmail.com
+                                </td>
+                                <td>
+                                    08134315277
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    26
+                                </td>
+                                <td>
+                                    CHIOMA
+                                    &nbsp;
+                                    CHUKWUMA
+                                </td>
+                                <td>
+                                    Makeup + Hair
+                                </td>
+                                <td>
+                                    NGN 150,000.00
+                                </td>
+                                <td>
+                                    ccchioma44@gmail.com
+                                </td>
+                                <td>
+                                    08133689552
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    27
+                                </td>
+                                <td>
+                                    OBILADE
+                                    &nbsp;
+                                    BABAJIDE
+                                </td>
+                                <td>
+                                    Location
+                                </td>
+                                <td>
+                                    NGN 70,000.00
+                                </td>
+                                <td>
+                                    babajideobilade@gmail.com
+                                </td>
+                                <td>
+                                    08023045011
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    28
+                                </td>
+                                <td>
+                                    EMMANUEL
+                                    &nbsp;
+                                    IDUH
+                                </td>
+                                <td>
+                                    Camera Department
+                                </td>
+                                <td>
+                                    NGN 130,000.00
+                                </td>
+                                <td>
+                                    Iduhemmanueljohn@gmail.com
+                                </td>
+                                <td>
+                                    08038475324
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    29
+                                </td>
+                                <td>
+                                    ADEPEJU
+                                    &nbsp;
+                                    ADEMOSU
+                                </td>
+                                <td>
+                                    Wardrobe
+                                </td>
+                                <td>
+                                    NGN 150,000.00
+                                </td>
+                                <td>
+                                    ademosuadepeju@gmail.com
+                                </td>
+                                <td>
+                                    08032170382
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    30
+                                </td>
+                                <td>
+                                    MURITALA
+                                    &nbsp;
+                                    SABILI
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 200,000.00
+                                </td>
+                                <td>
+                                    murisabili78@gmail.com
+                                </td>
+                                <td>
+                                    09073013643
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    31
+                                </td>
+                                <td>
+                                    DAVID.O
+                                    &nbsp;
+                                    EKILISIE-UZOR
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 100,000.00
+                                </td>
+                                <td>
+                                    ekilisieuzor@gmail.com
+                                </td>
+                                <td>
+                                    08098762741
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    32
+                                </td>
+                                <td>
+                                    MARY ABIGAIL
+                                    &nbsp;
+                                    SOMABE
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 60,000.00
+                                </td>
+                                <td>
+                                    maryabigailsomabe@gmail.com
+                                </td>
+                                <td>
+                                    09095935514
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    33
+                                </td>
+                                <td>
+                                    LEKE
+                                    &nbsp;
+                                    BADIRU
+                                </td>
+                                <td>
+                                    Camera Department
+                                </td>
+                                <td>
+                                    NGN 450,000.00
+                                </td>
+                                <td>
+                                    lekebadiru@gmail.com
+                                </td>
+                                <td>
+                                    08033211915
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    34
+                                </td>
+                                <td>
+                                    OLUWATOYIN
+                                    &nbsp;
+                                    AINA LAWAL
+                                </td>
+                                <td>
+                                    Sound Department
+                                </td>
+                                <td>
+                                    NGN 350,000.00
+                                </td>
+                                <td>
+                                    lawal12@yahoo.com
+                                </td>
+                                <td>
+                                    08028868009
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    35
+                                </td>
+                                <td>
+                                    DANIEL
+                                    &nbsp;
+                                    EFFIONG
+                                </td>
+                                <td>
+                                    Lighting Department
+                                </td>
+                                <td>
+                                    NGN 250,000.00
+                                </td>
+                                <td>
+                                    dannycare213@yahoo.com
+                                </td>
+                                <td>
+                                    08060047289
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    36
+                                </td>
+                                <td>
+                                    MATHIAS
+                                    &nbsp;
+                                    AKEHE
+                                </td>
+                                <td>
+                                    Lighting Department
+                                </td>
+                                <td>
+                                    NGN 120,000.00
+                                </td>
+                                <td>
+                                    mathiasakahe@yahoo.com
+                                </td>
+                                <td>
+                                    08037194601
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    37
+                                </td>
+                                <td>
+                                    AKINSOLA
+                                    &nbsp;
+                                    AKINLEYIMU
+                                </td>
+                                <td>
+                                    Lighting Department
+                                </td>
+                                <td>
+                                    NGN 100,000.00
+                                </td>
+                                <td>
+                                    akinsolaleymiu@gmail.com
+                                </td>
+                                <td>
+                                    08064613008
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    38
+                                </td>
+                                <td>
+                                    BOSE
+                                    &nbsp;
+                                    ADEYEMI- OLUFOWOBI
+                                </td>
+                                <td>
+                                    Props Department
+                                </td>
+                                <td>
+                                    NGN 180,000.00
+                                </td>
+                                <td>
+                                    boseadeyemi@gmail.com
+                                </td>
+                                <td>
+                                    08033474545
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    39
+                                </td>
+                                <td>
+                                    SEGUN
+                                    &nbsp;
+                                    ADEDEJI
+                                </td>
+                                <td>
+                                    Wardrobe
+                                </td>
+                                <td>
+                                    NGN 100,000.00
+                                </td>
+                                <td>
+                                    segunadedeji@gmai.com
+                                </td>
+                                <td>
+                                    0813186105
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    40
+                                </td>
+                                <td>
+                                    CHUKA
+                                    &nbsp;
+                                    EJORH
+                                </td>
+                                <td>
+                                    Post Production
+                                </td>
+                                <td>
+                                    NGN 800,000.00
+                                </td>
+                                <td>
+                                    chukaejorh@gmail.com
+                                </td>
+                                <td>
+                                    07037874311
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    41
+                                </td>
+                                <td>
+                                    NIRAN
+                                    &nbsp;
+                                    ADELEYE
+                                </td>
+                                <td>
+                                    Post Production
+                                </td>
+                                <td>
+                                    NGN 300,000.00
+                                </td>
+                                <td>
+                                    niranadeleye@gmail.com
+                                </td>
+                                <td>
+                                    08022793742
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    42
+                                </td>
+                                <td>
+                                    STEVEN
+                                    &nbsp;
+                                    MOHAMMED
+                                </td>
+                                <td>
+                                    SET Department
+                                </td>
+                                <td>
+                                    NGN 150,000.00
+                                </td>
+                                <td>
+                                    mohammedsteven141@gmail.com
+                                </td>
+                                <td>
+                                    07016286387
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    43
+                                </td>
+                                <td>
+                                    MOJI
+                                    &nbsp;
+                                    OSUOLALE
+                                </td>
+                                <td>
+                                    Makeup + Hair
+                                </td>
+                                <td>
+                                    NGN 300,000.00
+                                </td>
+                                <td>
+                                    Surlly4real@gmail.com
+                                </td>
+                                <td>
+                                    08062868089
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    44
+                                </td>
+                                <td>
+                                    VICTOR
+                                    &nbsp;
+                                    AGHAHOWA
+                                </td>
+                                <td>
+                                    Director
+                                </td>
+                                <td>
+                                    NGN 800,000.00
+                                </td>
+                                <td>
+                                    victoraghahowa@gmail.com
+                                </td>
+                                <td>
+                                    07038990384
+                                </td>
+                                <td><label class="label label-danger">Inactive</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    45
+                                </td>
+                                <td>
+                                    TOPE
+                                    &nbsp;
+                                    OSHIN
+                                </td>
+                                <td>
+                                    Director
+                                </td>
+                                <td>
+                                    NGN 600,000.00
+                                </td>
+                                <td>
+                                    topeoshinfilm@gmail.com
+                                </td>
+                                <td>
+                                    08029759262
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    46
+                                </td>
+                                <td>
+                                    PATIENCE
+                                    &nbsp;
+                                    OGHRE IMOBHIO
+                                </td>
+                                <td>
+                                    Director
+                                </td>
+                                <td>
+                                    NGN 600,000.00
+                                </td>
+                                <td>
+                                    patoghre@yahoo.com
+                                </td>
+                                <td>
+                                    08035399655
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    47
+                                </td>
+                                <td>
+                                    PATRICK
+                                    &nbsp;
+                                    NKAMIANG
+                                </td>
+                                <td>
+                                    Director
+                                </td>
+                                <td>
+                                    NGN 500,000.00
+                                </td>
+                                <td>
+                                    chinasankamiang@yahoo.com
+                                </td>
+                                <td>
+                                    08026667210
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    48
+                                </td>
+                                <td>
+                                    SOLOMON
+                                    &nbsp;
+                                    NNODIM
+                                </td>
+                                <td>
+                                    Director
+                                </td>
+                                <td>
+                                    NGN 150,000.00
+                                </td>
+                                <td>
+                                    nnodimsolumkene@gmail.com
+                                </td>
+                                <td>
+                                    08106831916
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    49
+                                </td>
+                                <td>
+                                    OLUWASEUN
+                                    &nbsp;
+                                    OLUWASANMI
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 100,000.00
+                                </td>
+                                <td>
+                                    oluwasanmi_oluwaseun@gmail.com
+                                </td>
+                                <td>
+                                    08169095517
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    50
+                                </td>
+                                <td>
+                                    BUSOLA
+                                    &nbsp;
+                                    KOLAWOLE
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 100,000.00
+                                </td>
+                                <td>
+                                    busolatolani@gmail.com
+                                </td>
+                                <td>
+                                    080107153534
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    51
+                                </td>
+                                <td>
+                                    KELVIN
+                                    &nbsp;
+                                    ENOMA
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 100,000.00
+                                </td>
+                                <td>
+                                    kelvinenoma@gmail.com
+                                </td>
+                                <td>
+                                    07033562721
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    52
+                                </td>
+                                <td>
+                                    TOYIN
+                                    &nbsp;
+                                    SOLADOGUN
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 70,000.00
+                                </td>
+                                <td>
+                                    ghghghd@ggh.dahg
+                                </td>
+                                <td>
+                                    08064565203
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    53
+                                </td>
+                                <td>
+                                    TAJUDEEN
+                                    &nbsp;
+                                    OYINLOLA
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 70,000.00
+                                </td>
+                                <td>
+                                    hgdhgdsgh@dsg.hdghd
+                                </td>
+                                <td>
+                                    08066973023
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    54
+                                </td>
+                                <td>
+                                    TUNDE
+                                    &nbsp;
+                                    ALABI
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 250,000.00
+                                </td>
+                                <td>
+                                    tundealabi123@gmail.com
+                                </td>
+                                <td>
+                                    07030338899
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    55
+                                </td>
+                                <td>
+                                    EMMANUEL
+                                    &nbsp;
+                                    BASSEY
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 150,000.00
+                                </td>
+                                <td>
+                                    emmabee24@hotmail.com
+                                </td>
+                                <td>
+                                    08029845290
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    56
+                                </td>
+                                <td>
+                                    OLANREWAJU
+                                    &nbsp;
+                                    ADEBOYE
+                                </td>
+                                <td>
+                                    Camera Department
+                                </td>
+                                <td>
+                                    NGN 300,000.00
+                                </td>
+                                <td>
+                                    adekunladeboye@yahoo.com
+                                </td>
+                                <td>
+                                    08061244270
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    57
+                                </td>
+                                <td>
+                                    PRINCE
+                                    &nbsp;
+                                    UTI
+                                </td>
+                                <td>
+                                    Camera Department
+                                </td>
+                                <td>
+                                    NGN 300,000.00
+                                </td>
+                                <td>
+                                    oneprinceuti4@gmail.com
+                                </td>
+                                <td>
+                                    08035214751
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    58
+                                </td>
+                                <td>
+                                    UGBO
+                                    &nbsp;
+                                    EMEKA
+                                </td>
+                                <td>
+                                    Camera Department
+                                </td>
+                                <td>
+                                    NGN 200,000.00
+                                </td>
+                                <td>
+                                    ugboemeka@yahoo.com
+                                </td>
+                                <td>
+                                    08100194381
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    59
+                                </td>
+                                <td>
+                                    RASAQ
+                                    &nbsp;
+                                    OLADELE
+                                </td>
+                                <td>
+                                    Camera Department
+                                </td>
+                                <td>
+                                    NGN 200,000.00
+                                </td>
+                                <td>
+                                    razaqoladele369@gmail.com
+                                </td>
+                                <td>
+                                    08029484671
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    60
+                                </td>
+                                <td>
+                                    SUNDAY
+                                    &nbsp;
+                                    ADESUGBA
+                                </td>
+                                <td>
+                                    Sound Department
+                                </td>
+                                <td>
+                                    NGN 150,000.00
+                                </td>
+                                <td>
+                                    adesam21@gmail.com
+                                </td>
+                                <td>
+                                    08101974503
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    61
+                                </td>
+                                <td>
+                                    DAVID
+                                    &nbsp;
+                                    OMOKO
+                                </td>
+                                <td>
+                                    Director
+                                </td>
+                                <td>
+                                    NGN 200,000.00
+                                </td>
+                                <td>
+                                    dafido@gmail.com
+                                </td>
+                                <td>
+                                    070335330182
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    62
+                                </td>
+                                <td>
+                                    PETERSON
+                                    &nbsp;
+                                    ALOH
+                                </td>
+                                <td>
+                                    Sound Department
+                                </td>
+                                <td>
+                                    NGN 150,000.00
+                                </td>
+                                <td>
+                                    obinnapeterson@gmail.com
+                                </td>
+                                <td>
+                                    07059549733
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    63
+                                </td>
+                                <td>
+                                    VICTOR
+                                    &nbsp;
+                                    OMOLUABI
+                                </td>
+                                <td>
+                                    Lighting Department
+                                </td>
+                                <td>
+                                    NGN 120,000.00
+                                </td>
+                                <td>
+                                    omoluabi7p@gmail.com
+                                </td>
+                                <td>
+                                    08077840281
+                                </td>
+                                <td><label class="label label-danger">Inactive</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    64
+                                </td>
+                                <td>
+                                    OLAOLU
+                                    &nbsp;
+                                    OJO
+                                </td>
+                                <td>
+                                    Lighting Department
+                                </td>
+                                <td>
+                                    NGN 120,000.00
+                                </td>
+                                <td>
+                                    princeolaojo8@gmail.com
+                                </td>
+                                <td>
+                                    08059374087
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    65
+                                </td>
+                                <td>
+                                    ABEEB
+                                    &nbsp;
+                                    AZEEZ
+                                </td>
+                                <td>
+                                    Lighting Department
+                                </td>
+                                <td>
+                                    NGN 120,000.00
+                                </td>
+                                <td>
+                                    azeezabeeb1503@gmail.com
+                                </td>
+                                <td>
+                                    08133705424
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    66
+                                </td>
+                                <td>
+                                    CHISOM
+                                    &nbsp;
+                                    ILOMUANAYA
+                                </td>
+                                <td>
+                                    SET Department
+                                </td>
+                                <td>
+                                    NGN 120,000.00
+                                </td>
+                                <td>
+                                    chisomilomuanya11@gmail.com
+                                </td>
+                                <td>
+                                    08100149356
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    67
+                                </td>
+                                <td>
+                                    AFOLABI
+                                    &nbsp;
+                                    MUKHTAR
+                                </td>
+                                <td>
+                                    Props Department
+                                </td>
+                                <td>
+                                    NGN 120,000.00
+                                </td>
+                                <td>
+                                    donteemah@gmail.com
+                                </td>
+                                <td>
+                                    08028413548
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    68
+                                </td>
+                                <td>
+                                    TOLULOPE
+                                    &nbsp;
+                                    OLAFUSI
+                                </td>
+                                <td>
+                                    Wardrobe
+                                </td>
+                                <td>
+                                    NGN 140,000.00
+                                </td>
+                                <td>
+                                    clemtolu@gmail.com
+                                </td>
+                                <td>
+                                    08089532902
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    69
+                                </td>
+                                <td>
+                                    SHERIFAT ABIODUN
+                                    &nbsp;
+                                    KUYORO
+                                </td>
+                                <td>
+                                    Makeup + Hair
+                                </td>
+                                <td>
+                                    NGN 150,000.00
+                                </td>
+                                <td>
+                                    sherdanbx1@gmail.com
+                                </td>
+                                <td>
+                                    08028449997
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    70
+                                </td>
+                                <td>
+                                    IBUKUN
+                                    &nbsp;
+                                    ADEKOYA
+                                </td>
+                                <td>
+                                    Makeup + Hair
+                                </td>
+                                <td>
+                                    NGN 100,000.00
+                                </td>
+                                <td>
+                                    ibunkunadekoya2408@gmail.com
+                                </td>
+                                <td>
+                                    08039388127
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    71
+                                </td>
+                                <td>
+                                    MARIAM
+                                    &nbsp;
+                                    ABDULRAHAM
+                                </td>
+                                <td>
+                                    Makeup + Hair
+                                </td>
+                                <td>
+                                    NGN 100,000.00
+                                </td>
+                                <td>
+                                    meemeesweet2@gmail.com
+                                </td>
+                                <td>
+                                    08092185378
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    72
+                                </td>
+                                <td>
+                                    BIMBO
+                                    &nbsp;
+                                    USMAN
+                                </td>
+                                <td>
+                                    Post Production
+                                </td>
+                                <td>
+                                    NGN 250,000.00
+                                </td>
+                                <td>
+                                    eclecticpixelreslove@gmail.com
+                                </td>
+                                <td>
+                                    08055310758
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    73
+                                </td>
+                                <td>
+                                    OLAITAN
+                                    &nbsp;
+                                    OLORUNTOYIN
+                                </td>
+                                <td>
+                                    Post Production
+                                </td>
+                                <td>
+                                    NGN 300,000.00
+                                </td>
+                                <td>
+                                    olaitaneditor@gmail.com
+                                </td>
+                                <td>
+                                    08023703439
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    74
+                                </td>
+                                <td>
+                                    AHMED
+                                    &nbsp;
+                                    PEDRO
+                                </td>
+                                <td>
+                                    Post Production
+                                </td>
+                                <td>
+                                    NGN 220,000.00
+                                </td>
+                                <td>
+                                    pedahmed@yahoo.com
+                                </td>
+                                <td>
+                                    08083344348
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    75
+                                </td>
+                                <td>
+                                    VIYON
+                                    &nbsp;
+                                    AWHANSE
+                                </td>
+                                <td>
+                                    Production Staff
+                                </td>
+                                <td>
+                                    NGN 250,000.00
+                                </td>
+                                <td>
+                                    saveoviyon@gmail.com
+                                </td>
+                                <td>
+                                    08033202788
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    76
+                                </td>
+                                <td>
+                                    PHILEMON
+                                    &nbsp;
+                                    MAIGARI
+                                </td>
+                                <td>
+                                    Director
+                                </td>
+                                <td>
+                                    NGN 350,000.00
+                                </td>
+                                <td>
+                                    philemonmaigari@yahoo.com
+                                </td>
+                                <td>
+                                    09057065143
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    77
+                                </td>
+                                <td>
+                                    MOJEED
+                                    &nbsp;
+                                    AJAO
+                                </td>
+                                <td>
+                                    Camera Department
+                                </td>
+                                <td>
+                                    NGN 100,000.00
+                                </td>
+                                <td>
+                                    greengoldproductios@gmail.com
+                                </td>
+                                <td>
+                                    08033161787
+                                </td>
+                                <td><label class="label label-success">Active</label></td>
+                                <td>
+                                    <a href="view_vendors_crew_individual.html" class=" btn btn-sm btn-primary">View</a>
+                                    <a href="vendors_crew_edit.html" class="btn btn-sm btn-danger">Edit</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                </div>
+            </div>
+     </div>
+
+        </div>
+        
+        <!-- Main Col END -->
+
+        
+    </div><!-- body-row END -->
+
+
+    
+	<script src="js/script.js"></script> 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- MDBootstrap Datatables  -->
+    <script type="text/javascript" src="js/addons/datatables.min.js"></script>
+
+</body>
+</html>
